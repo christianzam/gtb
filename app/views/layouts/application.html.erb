@@ -1,14 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Gtb</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
+    <title>Gian Tara Bani</title>
+    <meta name="description" content="GianTaraBani espacio de desarrollo y bienestar integral. Ofrecemos experiencias holísticas para sanación y crecimiento de mente, cuerpo y conciencia.">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Facebook meta-->
+    <meta property="og:title" content="Gian Tara Bani - Espacio de desarrollo y bienestar integral">
+    <meta property="og:image" content="Gian_Tara_Bani_logo.jpg">
+    <meta property="og:description" content="Gian Tara Bani cfrece experiencias holísticas para sanación y crecimiento de mente, cuerpo y conciencia.">
+    <meta property="og:site_name" content="Gian Tara Bani"/>
+    <!-- style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Playfair+Display+SC&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/ico">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%# <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>  
   </head>
-
   <body>
     <%= yield %>
   </body>

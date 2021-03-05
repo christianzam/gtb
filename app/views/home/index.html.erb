@@ -1,0 +1,832 @@
+<!--====== PRELOADER PART START ======-->
+    <div class="preloader">
+  <div class="loader">
+      <div class="ytp-spinner">
+          <div class="ytp-spinner-container">
+              <div class="ytp-spinner-rotator">
+                  <div class="ytp-spinner-left">
+                      <div class="ytp-spinner-circle"></div>
+                  </div>
+                  <div class="ytp-spinner-right">
+                      <div class="ytp-spinner-circle"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--====== PRELOADER PART END ======-->
+
+<!--====== NAVBAR PART START ======-->
+<section class="header-area">
+    <div class="navbar-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="#">     
+                                <%=image_tag("Gian_Tara_Bani_logo_navbar.png", size: "70x70", alt: "LogoGTB")%> 
+                        </a>
+                        <!-- MENU ICON -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarEight" aria-controls="navbarEight" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                        </button>
+                        <!-- MENU ICON ENDS-->
+                        <div class="collapse navbar-collapse sub-menu-bar" id="navbarEight">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="page-scroll" href="#home">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="page-scroll" href="#about">Que Hacemos?</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="page-scroll" href="#servicios">Servicios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="page-scroll" href="#conocenos">Conocenos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="page-scroll" href="#contact">Contactanos</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="navbar-btn d-none mt-15 d-lg-inline-block">
+                            <a class="menu-bar" href="#side-menu-right"><i class="fa fa-bars"></i></a>
+                        </div>
+                    </nav> <!-- navbar -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </div> <!-- navbar area -->
+
+    <!---------------------- SLIDER ---------------------->
+
+        <div id="home" class="slider-area">
+            <div class="bd-example">
+                <div id="carouselOne" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselOne" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselOne" data-slide-to="1"></li>
+                        <li data-target="#carouselOne" data-slide-to="2"></li>
+                    </ol>
+                    <!-- SLIDER HERO BANNER -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item bg_cover active" style="background-image: url(GTB-slider-5.png)">
+                            <div class="carousel-caption">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-xl-6 col-lg-7 col-sm-10">
+                                            <h2 class="carousel-title"></h2>
+                                            <ul class="carousel-btn rounded-buttons"></ul>
+                                        </div>
+                                    </div> <!-- row -->
+                                </div> <!-- container -->
+                            </div> <!-- carousel caption -->
+                        </div> <!-- carousel-item -->
+
+                        <div class="carousel-item bg_cover" style="background-image: url(GTB-slider-1.png)">
+                            <div class="carousel-caption">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-xl-6 col-lg-7 col-sm-10">
+                                            <h2 class="carousel-title"></h2>
+                                            <ul class="carousel-btn rounded-buttons">
+                                                <!-- <li><a class="main-btn rounded-three" href="#">GET STARTED</a></li>
+                                                <li><a class="main-btn rounded-one" href="#">DOWNLOAD</a></li> -->
+                                            </ul>
+                                        </div>
+                                    </div> <!-- row -->
+                                </div> <!-- container -->
+                            </div> <!-- carousel caption -->
+                        </div> <!-- carousel-item -->
+
+                        <div class="carousel-item bg_cover" style="background-image: url(conocenos-mar21.jpg)">
+                            <div class="carousel-caption">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-xl-6 col-lg-7 col-sm-10">
+                                            <h2 class="carousel-title"></h2>
+                                            <ul class="carousel-btn rounded-buttons">
+                                                <!-- <li><a class="main-btn rounded-three" href="#">GET STARTED</a></li>
+                                                <li><a class="main-btn rounded-one" href="#">DOWNLOAD</a></li> -->
+                                            </ul>
+                                        </div>
+                                    </div> <!-- row -->
+                                </div> <!-- container -->
+                            </div> <!-- carousel caption -->
+                        </div> <!-- carousel-item -->                    
+
+                        <div class="carousel-item bg_cover" style="background-image: url(GTB-slider-4.png)">
+                            <div class="carousel-caption">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-xl-6 col-lg-7 col-sm-10">
+                                            <h2 class="carousel-title">Yoga Prenatal</h2>
+                                            <ul class="carousel-btn rounded-buttons">
+                                                <!-- <li><a class="main-btn rounded-three" href="#">GET STARTED</a></li>
+                                                <li><a class="main-btn rounded-one" href="#">DOWNLOAD</a></li> -->
+                                            </ul>
+                                        </div>
+                                    </div> <!-- row -->
+                                </div> <!-- container -->
+                            </div> <!-- carousel caption -->
+                        </div> <!-- carousel-item -->
+                    </div> <!-- carousel-inner -->
+
+                    <a class="carousel-control-prev" href="#carouselOne" role="button" data-slide="prev">
+                        <i class="fa-arrow-alt-circle-left"></i>
+                    </a>
+
+                    <a class="carousel-control-next" href="#carouselOne" role="button" data-slide="next">
+                        <i class="lni-arrow-right-circle"></i>
+                    </a>
+                </div> <!-- carousel -->
+            </div> <!-- bd-example -->
+        </div>
+    </section>
+<!--====== NAVBAR ENDS ======-->
+
+<!--====== SAIDEBAR PART START ======-->
+  <div class="sidebar-right">
+    <div class="sidebar-close">
+        <a class="close" href="#close"><span style="font-size: 1.3em;"><i class="fa fa-times"></i><span></span></a>
+    </div>
+    <div class="sidebar-content">
+      <div class="sidebar-logo text-center">
+        <a href="#"><img src="Gian_Tara_Bani_logo_navbar.png" alt="Logo"></a>
+      </div> <!-- logo -->
+    <div class="sidebar-menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Que Hacemos</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#conocenos">Conocenos</a></li>
+        <li><a href="#contact">Contactanos</a></li>
+      </ul>
+    </div> <!-- menu -->
+      <div class="sidebar-social d-flex align-items-center justify-content-center">
+        <span>FOLLOW US</span>
+          <ul>
+            <li><a href="https://www.instagram.com/giantarabani/"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/GIANTARABANI"><i class="fa fa-facebook-square"></i></i></a></li>
+          </ul>
+      </div> <!-- sidebar social -->
+    </div> <!-- content -->
+  </div>
+<div class="overlay-right"></div>
+<!--====== SIDEBAR PART ENDS ======-->
+
+<!--====== QUE HACEMOS/about PART START ======-->
+    <section id="about" class="about-area-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-title pb-10 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                      <h4 class="title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.6s">GIAN TARA BANI</h4>
+                      <p class="text wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">Es un espacio de desarrollo personal y bienestar integral, en el que ofrecemos experiencias holísticas para la sanación y el crecimiento personal de mente, cuerpo y conciencia. Contamos Yoga Kundalini,meditaciones, sonoterapias y más.</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="about-content-2 mt-40 d-sm-flex wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                                <div class="about-icon">
+                                  <img src="que-hacemos-1.jpg" height="100" width="100" alt="Icon">
+                                  <!-- <i class="lni-laptop-phone"></i> -->
+                                </div>
+                                <div class="about-content media-body">
+                                    <h4 class="about-title">Mantras Motivacionales</h4>
+                                    <p class="text">Compartimos mantras para empezar la semana y aumentar tu potencia.</p>
+                                </div>
+                            </div> <!-- about content -->
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about-content-2 mt-40 d-sm-flex wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
+                                <div class="about-icon">
+                                  <img src="que-hacemos-2.jpg" height="100" width="100" alt="Icon">
+                                  <!-- <i class="lni-laptop-phone"></i> -->
+                                </div>
+                                <div class="about-content media-body">
+                                    <h4 class="about-title">Disenado <br> para todos</h4>
+                                    <p class="text">Paquetes mensuales, clases grupales, individuales y en linea.</p>
+                                </div>
+                            </div> <!-- about content -->
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about-content-2 mt-40 d-sm-flex wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.9s">
+                                <div class="about-icon">
+                                  <img src="que-hacemos-3.jpg" height="100" width="100" alt="Icon">
+                                  <!-- <i class="lni-laptop-phone"></i> -->
+                                </div>
+                                <div class="about-content media-body">
+                                    <h4 class="about-title">Recetas para cargar energia</h4>
+                                    <p class="text">Ingredientes que refuerzan el amor propio 💜, porque cuando somos luz, damos luz.</p>
+                                </div>
+                            </div> <!-- about content -->
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about-content-2 mt-40 d-sm-flex wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">
+                                <div class="about-icon">
+                                    <img src="que-hacemos-4.jpg" height="100" width="100" alt="Icon">
+                                    <!-- <i class="lni-laptop-phone"></i> -->
+                                </div>
+                                <div class="about-content media-body">
+                                    <h4 class="about-title">Meditacion</h4>
+                                    <p class="text">Ejercicios y terapias para fijar objetivos mensuales y lograr cambios progresivos.</p>
+                                </div>
+                            </div> <!-- about content -->
+                        </div>
+                    </div> <!-- row -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+        <div class="about-image d-lg-flex align-items-center">
+            <div class="image wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.6s" data-wow-offset="50">
+                <img src="que-hacemos-6.jpg" alt="about">
+            </div>
+        </div> <!-- services image -->
+    </section>
+<!--====== QUE HACEMOS?/about PART ENDS ======-->
+
+<!--====== SERVICES/portfolio PART START ======-->
+  <section id="servicios" class="portfolio-area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section-title text-center pb-20">
+                    <h3 class="title">Servicios</h3>
+                    <p class="text">Te guiaremos en el camino de iluminación para equilibrar tu cuerpo, mente y alma y así alcanzar tu nivel máximo de conciencia.</p>
+                </div> <!-- row -->
+            </div>
+        </div> <!-- row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="portfolio-menu pt-30 text-center">
+                    <ul>
+                        <li data-filter="*" class="active">TODAS LAS SESIONES</li>
+                        <li data-filter=".yoga-3">Yoga</li>
+                        <li data-filter=".meditacion-3">Meditacion</li>
+                        <li data-filter=".grupos-3">Grupos</li>
+                        <li data-filter=".instrumentos-3">Instrumental</li>
+                    </ul>
+                </div> <!-- portfolio menu -->
+            </div>
+        </div> <!-- row -->
+        <div class="row grid">
+            <div class="col-lg-4 col-sm-6 yoga-3">
+                <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                    <div class="portfolio-image">
+                        <img src="s1b-pequeno-yogui.png" alt="">
+                        <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                            <div class="portfolio-content">
+                                <div class="portfolio-icon">
+                                    <a class="image-popup" href="s1a-pequeno-yogui.jpg"><i class="fa fa-search-plus"></i></a>
+                                </div>
+                                <!-- <div class="portfolio-icon">
+                                    <a href="#"><i class="lni-link"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-text">
+                        <h4 class="portfolio-title"><a href="#">Pequeño Yogui</a></h4>
+                        <p class="text">Kundalini Yoga para niños de 3 a 12 años. Posturas de Yoga, respiraciones consientes, juegos y Meditación con Comunicación Celestial componen la energía de esta clase. En esta clase los niños liberan estrés, emociones de su día a día y aprenden a meditar de una forma divertida y fácil cantando y bailando mantras de Kundalini Yoga.</p>
+                    </div>
+                </div> <!-- single portfolio -->
+            </div>
+            <div class="col-lg-4 col-sm-6 yoga-3">
+                <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s">
+                    <div class="portfolio-image">
+                        <img src="s2b-yoga-kundalini-handpan.jpg" alt="">
+                        <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                            <div class="portfolio-content">
+                                <div class="portfolio-icon">
+                                    <a class="image-popup" href="s2a-yoga-kundali-handpan.jpg"><i class="fa fa-search-plus"></i></a>
+                                </div>
+                                <!-- <div class="portfolio-icon">
+                                    <a href="#"><i class="lni-link"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-text">
+                        <h4 class="portfolio-title"><a href="#">Yoga Kundalini con Handpan</a></h4>
+                        <p class="text">El sonido suave sobre el cuerpo y la mente ayuda a desconectarse del mundo, a encontrar el equilibrio y auto-sanación. Durante esta clase la música es un elemento central que ayuda a concentrarse en el “yo”, apreciando las sensaciones que tu cuerpo transmite e incluso, sentir por unos minutos que el alma abandona el cuerpo para sanarlo.</p>
+                    </div>
+                </div> <!-- single portfolio -->
+            </div>
+            <div class="col-lg-4 col-sm-6 meditacion-3">
+                <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
+                    <div class="portfolio-image">
+                        <img src="s3-meditando-handpan.jpg" alt="">
+                        <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                            <div class="portfolio-content">
+                                <div class="portfolio-icon">
+                                    <a class="image-popup" href="s3-meditando-handpan.jpg"><i class="fa fa-search-plus"></i></a>
+                                </div>
+                                <!-- <div class="portfolio-icon">
+                                    <a href="#"><i class="lni-link"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-text">
+                        <h4 class="portfolio-title"><a href="#">Meditar con Handpan</a></h4>
+                        <p class="text">Es un espacio que combina la meditación y el sonido.Te ayudara a conectar tu interior, a desarrollar tu intuición mediante la resonancia del sonido armónico del Hanpand; produciendo patrones de actividad eléctrica cerebral que detonaran procesos cognitivos y funciones corporales armónicas, brindando un estado de tranquilidad y sanación. ¡Ven a trabajar el sonido armonico de tu mente!
+                        </p>
+                    </div>
+                </div> <!-- single portfolio -->
+            </div>
+            <div class="col-lg-4 col-sm-6 grupos-3">
+                <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                    <div class="portfolio-image">
+                        <img src="s4b-charan-jaap.jpg" alt="">
+                        <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                            <div class="portfolio-content">
+                                <div class="portfolio-icon">
+                                    <a class="image-popup" href="s4a-charan-jaap.jpg"><i class="fa fa-search-plus"></i></a>
+                                </div>
+                                <!-- <div class="portfolio-icon">
+                                    <a href="#"><i class="lni-link"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-text">
+                        <h4 class="portfolio-title"><a href="#">Chara Jaap</a></h4>
+                        <p class="text">Charan = los pies de loto de Dios. Jaap = repetición, meditación, o meditación de repetición. En conjunto su traducción es: «Profunda meditación repetitiva de un mantra con los pies». Es un excelente ejercicio de coordinación y enfoque en el que acostumbramos a la mente a ir junto con el cuerpo. Tu salón de clases es enorme, es un conjunto de arboles, ambiente en la naturaleza, te conviertes en una parte de ese bosque.</p>
+                    </div>
+                </div> <!-- single portfolio -->
+            </div>
+            <div class="col-lg-4 col-sm-6 grupos-3">
+                <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s">
+                    <div class="portfolio-image">
+                        <img src="s5b-ceremonia.jpg" alt="">
+                        <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                            <div class="portfolio-content">
+                                <div class="portfolio-icon">
+                                    <a class="image-popup" href="s5a-ceremonia.jpg"><i class="fa fa-search-plus"></i></a>
+                                </div>
+                                <!-- <div class="portfolio-icon">
+                                    <a href="#"><i class="lni-link"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-text">
+                        <h4 class="portfolio-title"><a href="#">Ceremonia</a></h4>
+                        <p class="text">En el día 120 la Fuerza Creativa le concede la encarnación completa al alma y ese mismo día, el punto del ombligo de la madre se activa para nutrir el Alma del bebé. La radiancia y el estado de conciencia de la madre es lo que atraerá el alma ideal para el bebé que está esperando. A partir de este momento el estado de conciencia del bebé empezará a crecer y su subconsciente se empezará a formar según lo que la madre piense, sienta o diga, el bebé recibirá y absorberá todo a través de ella. En la “Ceremonia de Bendición de 120 días” la mujer es honrada con la llegada de una alma.</p>
+                    </div>
+                </div> <!-- single portfolio -->
+            </div>
+            <div class="col-lg-4 col-sm-6 grupos-3">
+                <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
+                    <div class="portfolio-image">
+                        <img src="s6a-circulo-mujeres.png" alt="">
+                        <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                            <div class="portfolio-content">
+                                <div class="portfolio-icon">
+                                    <a class="image-popup" href="s6b-circulo-mujeres.png"><i class="fa fa-search-plus"></i></a>
+                                </div>
+                                <!-- <div class="portfolio-icon">
+                                    <a href="#"><i class="lni-link"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-text">
+                        <h4 class="portfolio-title"><a href="#">Circulo de Mujeres</a></h4>
+                        <p class="text">Es un espacio de reunión de Mujeres, un espacio sagrado de sanación y celebración. En donde las mujeres silenciosamente se nutren y fortalecen el despertar femenino.El poder de los círculos de mujeres está ligado al vínculo Mujer-Luna, es una forma de volver a reconocer la sincronía del ciclo lunar y el nuestro, comenzamos a despertar la conexión con la naturaleza y la Tierra.</p>
+                    </div>
+                </div> <!-- single portfolio -->
+            </div>
+            <div class="col-lg-4 col-sm-6 meditacion-3">
+                <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
+                    <div class="portfolio-image">
+                        <img src="s7a-meditando-ando.png" alt="">
+                        <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                            <div class="portfolio-content">
+                                <div class="portfolio-icon">
+                                    <a class="image-popup" href="s7b-meditando-ando.png"><i class="fa fa-search-plus"></i></a>
+                                </div>
+                                <!-- <div class="portfolio-icon">
+                                    <a href="#"><i class="lni-link"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-text">
+                        <h4 class="portfolio-title"><a href="#">Meditando-Ando</a></h4>
+                        <p class="text">La mente está sintonizada con el intelecto, creando pensamientos relacionados con emociones y temperamento.Estos se convierten en deseos y el deseo al cuerpo para concebir creatividad. ¡Ven a experimentar la creatividad de tu mente! Aprenderás diferentes estadios y preparaciones para la meditación</p>
+                    </div>
+                </div> <!-- single portfolio -->
+            </div>
+            <div class="col-lg-4 col-sm-6 meditacion-3">
+                <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
+                    <div class="portfolio-image">
+                        <img src="s8a-meditacion-mantras.png" alt="">
+                        <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                            <div class="portfolio-content">
+                                <div class="portfolio-icon">
+                                    <a class="image-popup" href="s8b-meditacion-mantras.png"><i class="fa fa-search-plus"></i></a>
+                                </div>
+                                <!-- <div class="portfolio-icon">
+                                    <a href="#"><i class="lni-link"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-text">
+                        <h4 class="portfolio-title"><a href="#">Meditacion con Mantras</a></h4>
+                        <p class="text">Mediante mantras y meditación crearás una comunicación entre tu mente y cuerpo, fomentando tu capacidad de concentración, conciencia y claridad mental. Al encontrar el sonido de los mantras y resonar en ti, experimentarás un flujo a través de la vibración, impactando la proyección de la mente. ¡Vive la experiencia!</p>
+                    </div>
+                </div> <!-- single portfolio -->
+            </div>
+            <div class="col-lg-4 col-sm-6 instrumentos-3">
+                <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
+                    <div class="portfolio-image">
+                        <img src="s9b-bano-gong.jpg" alt="">
+                        <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                            <div class="portfolio-content">
+                                <div class="portfolio-icon">
+                                    <a class="image-popup" href="s9a-bano-gong.jpg"><i class="fa fa-search-plus"></i></a>
+                                </div>
+                                <!-- <div class="portfolio-icon">
+                                    <a href="#"><i class="lni-link"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-text">
+                        <h4 class="portfolio-title"><a href="#">Baño de Gong</a></h4>
+                        <p class="text">Mediante la vibración y la frecuencia reduciras el estrés, alterar la conciencia y crear una profunda sensación de bienestar para una mejor salud. Estas frecuencias de sonido en un Baño de Gong en vivo estimulan la actividad celular del sistema nervioso, con efectos terapéuticos. ¡Descubre los beneficios por ti mismo</p>
+                    </div>
+                </div> <!-- single portfolio -->
+            </div>
+            <div class="col-lg-4 col-sm-6 instrumentos-3">
+                <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
+                    <div class="portfolio-image">
+                        <img src="s10a-armonizacion-cuencos.jpg" alt="">
+                        <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                            <div class="portfolio-content">
+                                <div class="portfolio-icon">
+                                    <a class="image-popup" href="s10a-armonizacion-cuencos.jpg"><i class="fa fa-search-plus"></i></a>
+                                </div>
+                                <!-- <div class="portfolio-icon">
+                                    <a href="#"><i class="lni-link"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-text">
+                        <h4 class="portfolio-title"><a href="#">Armonizacion con Cuencos</a></h4>
+                        <p class="text">En esta clase tendrás una terapia sonora para relajarte profundamente, liberaras estrés físico y emocional. Se practica en postura de Savasana, escuchando sonidos de los cuencos que te armonizaran. Se recomienda venir con ropa cómoda y la mejor actitud para descansar, sanar y soltar.</p>
+                    </div>
+                </div> <!-- single portfolio -->
+            </div>
+            <div class="col-lg-4 col-sm-6 yoga-3">
+                <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
+                    <div class="portfolio-image">
+                        <img src="s11a-yoga-gong.jpg" alt="">
+                        <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                            <div class="portfolio-content">
+                                <div class="portfolio-icon">
+                                    <a class="image-popup" href="s11b-yoga-gong.jpg"><i class="fa fa-search-plus"></i></a>
+                                </div>
+                                <!-- <div class="portfolio-icon">
+                                    <a href="#"><i class="lni-link"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-text">
+                        <h4 class="portfolio-title"><a href="#">Yoga Kundalini + Gong</a></h4>
+                        <p class="text">Es una clase para limpiar la mente, liberar el estrés del día a día, despertar el subconsciente, retirar bloqueos energéticos. Mediante vibración sónica que acalla los pensamientos sustentados de emociones desestabilizadoras; siendo el GONG el instrumento de reestructuración mental. ¡Ven y vive la experiencia de crear un estado extraordinario de conciencia, conectando la realidad con el infinito!. Grupos mixtos, no se requiere experiencia previa en ningún tipo de Yoga.</p>
+                    </div>
+                </div> <!-- single portfolio -->
+            </div>
+            <div class="col-lg-4 col-sm-6 yoga-3">
+                <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
+                    <div class="portfolio-image">
+                        <img src="s10b-armonizacion-cuencos.jpg" alt="">
+                        <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                            <div class="portfolio-content">
+                                <div class="portfolio-icon">
+                                    <a class="image-popup" href="s11b-yoga-gong.jpg"><i class="fa fa-search-plus"></i></a>
+                                </div>
+                                <!-- <div class="portfolio-icon">
+                                    <a href="#"><i class="lni-link"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-text">
+                        <h4 class="portfolio-title"><a href="#">Yoga Kundalini + Cuencos</a></h4>
+                        <p class="text">En esta clase aprenderás diferentes técnicas de meditación y posturas de Kundalini Yoga, trabajando con tu mente para liberarte del estrés del día a día, concluyendo con una relajación profunda escuchando sonidos de CUENCOS que armonizaran todos tus sentidos.</p>
+                    </div>
+                </div> <!-- single portfolio -->
+            </div>
+            <div class="col-lg-4 col-sm-6 yoga-3">
+                <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
+                    <div class="portfolio-image">
+                        <img src="s12-yoga-kundalini.jpg" alt="">
+                        <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                            <div class="portfolio-content">
+                                <div class="portfolio-icon">
+                                    <a class="image-popup" href="s12-yoga-kundalini.jpg"><i class="fa fa-search-plus"></i></a>
+                                </div>
+                                <!-- <div class="portfolio-icon">
+                                    <a href="#"><i class="lni-link"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-text">
+                        <h4 class="portfolio-title"><a href="#">Yoga Kundalini</a></h4>
+                        <p class="text">Yoga Kundalini es el Yoga de la "CONCIENCIA" de cada mente humana, una disciplina ancestral para la energía Interior. Aprenderás alineaciones del cuerpo y posturas, diferentes técnicas de Meditación que ayudaran a liberarte del estrés del día a día, entrando a un espacio de relajación profunda. Estos elementos te recuerdan lo que ya eres, llevándote a la experiencia práctica del infinito, teniendo como resultado un cuerpo físico sano, una mente neutral y una conexión con tu interior. Ven y vive la experiencia de empoderarte a ti mism@. Grupos mixtos, no se requiere experiencia</p>
+                    </div>
+                </div> <!-- single portfolio -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+  </section>
+<!--====== SERVICIOS/portfolio PART ENDS ======-->
+       
+<!--====== CONOCENOS/tesminotial THREE PART START ======-->
+    <section id="conocenos" class="testimonial-area testimonial-2">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-center pb-20">
+                        <h3 class="title">Conocenos</h3>
+                        <p class="text">Ofrecemos experiencias holísticas para la sanación y el crecimiento personal de mente, cuerpo y conciencia.</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row testimonial-active-2">
+                        <div class="col-lg-4">
+                            <div class="single-testimonial mt-30 mb-30 text-center">
+                                <div>
+                                    <img src="conocenos-mar21.jpg" alt="Author">
+                                </div>
+                                <div class="testimonial-content">
+                                    <p class="text">KUNDALI YOGA | BANOS SONOROS | MEDITACION PRENATAL | HOMEOFFICE YOGA</p>
+                                    <h6 class="author-name">Marzo 2021</h6>
+                                    <span class="sub-title">Aishah Zamora - Gian Tara Bani</span>
+                                </div>
+                            </div> <!-- single testimonial -->
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="single-testimonial mt-30 mb-30 text-center">
+                                <div>
+                                    <img src="conocenos-feb21.jpg" alt="Author">
+                                </div>
+                                <div class="testimonial-content">
+                                    <p class="text">HOMEOFFICE YOGA | BANOS SONOROS| YOGA | MEDITACION</p>
+                                    <h6 class="author-name">Febrero 2021</h6>
+                                    <span class="sub-title">Aishah Zamora - Gian Tara Bani</span>
+                                </div>
+                            </div> <!-- single testimonial -->
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="single-testimonial mt-30 mb-30 text-center">
+                                <div>
+                                    <img src="conocenos-enero21.jpg" alt="Author">
+                                </div>
+                                <div class="testimonial-content">
+                                    <p class="text">KUNDALI YOGA | BANOS SONOROS | MEDITACION PRENATAL | HOMEOFFICE YOGA</p>
+                                    <h6 class="author-name">Enero 2021</h6>
+                                    <span class="sub-title">Aishah Zamora - Gian Tara Bani</span>
+                                </div>
+                            </div> <!-- single testimonial -->
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="single-testimonial mt-30 mb-30 text-center">
+                                <div>
+                                    <img src="conocenos-conexion21.jpg" alt="Author">
+                                </div>
+                                <div class="testimonial-content">
+                                    <p class="text">CONCIERTO | RITUAL  | BANO DEPURACION</p>
+                                    <h6 class="author-name">DICIEMBRE 2020</h6>
+                                    <span class="sub-title">Aishah Zamora - Gian Tara Bani</span>
+                                </div>
+                            </div> <!-- single testimonial -->
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="single-testimonial mt-30 mb-30 text-center">
+                                <div>
+                                    <img src="conocenos-nov20.jpg" alt="Author">
+                                </div>
+                                <div class="testimonial-content">
+                                    <p class="text">TECNICAS DE RESPIRACION | MEDITACION | HOMEOFFICE YOGA</p>
+                                    <h6 class="author-name">Noviembre 2020</h6>
+                                    <span class="sub-title">Aishah Zamora - Gian Tara Bani</span>
+                                </div>
+                            </div> <!-- single testimonial -->
+                        </div>
+                    </div> <!-- row -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+<!--====== CONOCENOS/testimonial THREE PART ENDS ======-->
+    
+<!--====== CONTACTANOS/contact START ======-->
+  <section id="contact" class="contact-area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section-title text-center pb-20">
+                    <h3 class="title">Contactanos</h3>
+                    <p class="text"></p>
+                </div> <!-- section title -->
+            </div>
+        </div> <!-- row -->
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-7 col-sm-8">
+                <div class="single-contact-box mt-50 text-center wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                    <div class="box-icon">
+                        <a href="mailto:contactchristianzamora@gmail.comtarget" target="_blank"><i class="fa fa-envelope" id="contact-icons"></i></a> 
+                    </div>
+                    <div class="box-content">
+                        <h4 class="box-title">Correo Electronico</h4>
+                        <p class="text">giantarabani@gmail.com</p>                        
+                    </div>
+                </div> <!-- single contact box -->
+            </div>
+            <div class="col-lg-4 col-md-7 col-sm-8">
+                <div class="single-contact-box mt-50 text-center wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                    <div class="box-icon">
+                      <a href="https://wa.me/525621736071?text=Quieres%20tomar%20sesiones%20de%20meditacion,%20solo%20preguntanos!" target="_blank"><i class="fa fa-whatsapp"  id="contact-icons"></i></a> 
+                    </div>
+                    <div class="box-content">
+                        <h4 class="box-title">Whatsapp</h4>
+                        <p class="text">+52 56 2173 6071</p>
+                    </div>
+                </div> <!-- single contact box -->
+            </div>
+            <div class="col-lg-4 col-md-7 col-sm-8">
+                <div class="single-contact-box mt-50 text-center wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.8s">
+                    <div class="box-icon">
+                        <a href="https://www.google.com.mx/maps/place/Avenida+Jes%C3%BAs+del+Monte+44,+Hacienda+de+las+Palmas,+52764+Naucalpan+de+Ju%C3%A1rez,+M%C3%A9x./@19.3949819,-99.2919033,17z/data=!3m1!4b1!4m5!3m4!1s0x85d206c5f7d46d65:0x3ab5bb20c2f312cb!8m2!3d19.3949819!4d-99.2897146?hl=en&authuser=0" target="_blank"><i class="fa fa-map-marker"  id="contact-icons"></i></a>
+                    </div>
+                    <div class="box-content">
+                        <h4 class="box-title">Direccion</h4>
+                        <p class="text">Av.Jesus del Monte 44, Hacienda de las Palmas,
+                            C.P. 52763, <br>Edo de Mexico</p> &nbsp; 
+                    </div>
+                </div> <!-- single contact box -->
+            </div>            
+        </div> <!-- row -->
+        <div class="contact-form pt-50">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-map mt-50 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
+                        <div class="gmap_canvas">                            
+                            <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Av.Jesus%20del%20Monte%2044,%20Hacienda%20de%20las%20Palmas,%20%20%20%20%20C.P.%2052763,%20Edo%20de%20Mexico&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                    </div> <!-- contact map -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-form form-style-one mt-35 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
+                        <form  id="contact-form" action="assets/php/contact.php" method="post">
+                            <div class="form-input mt-15">
+                                <label>Tu nombre</label>
+                                <div class="input-items default">
+                                    <input type="text" placeholder="Nombre" name="name">
+                                    <i class="fa fa-user"></i>
+                                </div>
+                            </div> <!-- form input -->
+                            <div class="form-input mt-15">
+                                <label>Email</label>
+                                <div class="input-items default">
+                                    <input type="email" placeholder="Correo electronico" name="email">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                            </div> <!-- form input -->
+                            <div class="form-input mt-15">
+                                <label>Mensaje</label>
+                                <div class="input-items default">
+                                    <textarea placeholder="Preguntas que tengas o Informacion que necesites" name="massage"></textarea>
+                                    <i class="fa fa-edit"></i>
+                                </div>
+                            </div> <!-- form input -->
+                            <p class="form-message"></p>
+                            <div class="form-input rounded-buttons mt-20">
+                                <button type="submit" class="main-btn rounded-three">ENVIAR</button>
+                            </div> <!-- form input -->
+                        </form>
+                    </div> <!-- contact form -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- contact form -->
+    </div> <!-- container -->
+  </section>
+<!--====== CONTACTANOS/contact ENDS ======-->
+    
+<!--====== FOOTER FOUR PART START ======-->
+  <footer id="footer" class="footer-area">
+    <div class="footer-widget">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer-link">
+                        <h6 class="footer-title">Redes Sociales</h6>
+                        <ul class="social">
+                            <li><a href="https://www.facebook.com/GIANTARABANI"><span style="font-size: 1.5em;"><i class="fa fa-facebook-square"></span></i> &nbsp Facebook</a></li>
+                            <li><a href="https://www.instagram.com/giantarabani/"><span style="font-size: 1.5em;"><i class="fa fa-instagram"></span></i> &nbsp Instagram</a></li>
+                            <li><a href="https://www.picuki.com/profile/giantarabani"><span style="font-size: 1.5em;"><i class="fa fa-camera"></span></i> &nbsp Picuki</a></li>
+                        </ul>
+                    </div> <!-- footer link -->
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer-link">
+                        <h6 class="footer-title">Preguntas & Dudas</h6>
+                        <ul>
+                            <li><a href="https://www.facebook.com/GIANTARABANI">Informacion</a></li>
+                            <li><a href="https://www.facebook.com/GIANTARABANI">Staff</a></li>
+                            <li><a href="https://www.facebook.com/GIANTARABANI">Terminos & Condiciones</a></li>
+                        </ul>
+                    </div> <!-- footer link -->
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer-link">
+                        <h6 class="footer-title"></h6>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div> <!-- footer link -->
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer-link">
+                        <ul>
+                          <li><a href="index.html"><img src="Gian_Tara_Bani_logo_navbar.png" height="150" width="150" alt="Logo"></a></li>
+                        </ul>
+                    </div> <!-- footer link -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </div> <!-- footer widget -->
+    
+    <div class="footer-copyright">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="copyright text-center text-lg-left mt-10">
+                        <p class="text">Crafted by <a style="color: rgb(27, 154, 171)" rel="nofollow" href="https://www.christian-zamora.com"> Christian Zamora</a> with <a style="color: #38f9d7" rel="nofollow" href="https://uideck.co">UiDeck</a>&<a style="color: #38f9d7" rel="nofollow" href="https://ayroui.com">Ayro UI</a>elements</p>
+                    </div> <!--  copyright -->
+                </div>
+                <!-- <div class="col-lg-2"> -->
+                    <!-- <div class="footer-logo text-center mt-10"> -->
+                        <!-- <a href="index.html"><img src="assets/images/czlogo.png" alt="Logo"></a> -->
+                    <!-- </div> footer logo -->
+                <!-- </div> -->
+                <!-- <div class="col-lg-5">
+                    <ul class="social text-center text-lg-right mt-10">
+                        <li><a href="https://www.facebook.com/GIANTARABANI"><i class="lni-facebook-filled"></i></a></li>
+                        <li><a href="https://www.instagram.com/giantarabani/"><i class="lni-instagram-original"></i></a></li>
+                    </ul> social
+                </div> -->
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </div> <!-- footer copyright -->
+  </footer>
+<!--====== FOOTER FOUR PART ENDS ======-->
+
+<!--====== BACK TOP TOP PART START ======-->
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+<!--====== BACK TOP TOP PART ENDS ======-->  
+
+<!--====== jquery js ======-->
+<script src="modernizr-3.6.0.min.js"></script>
+<script src="jquery-1.12.4.min.js"></script>
+<!--====== Bootstrap js ======-->
+<script src="bootstrap.min.js"></script>
+<script src="popper.min.js"></script>
+<!--====== Slick js ======-->
+<script src="slick.min.js"></script>
+<!--====== Isotope js ======-->
+<script src="isotope.pkgd.min.js"></script>
+<!--====== Images Loaded js ======-->
+<script src="imagesloaded.pkgd.min.js"></script>
+<!--====== Magnific Popup js ======-->
+<script src="jquery.magnific-popup.min.js"></script>
+<!--====== Scrolling js ======-->
+<script src="scrolling-nav.js"></script>
+<script src="jquery.easing.min.js"></script>
+<!--====== wow js ======-->
+<script src="wow.min.js"></script>
+<!--====== Main js ======-->
+<script src="main.js"></script>
