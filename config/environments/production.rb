@@ -59,12 +59,26 @@ Rails.application.configure do
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "gtb_production"
-
-  config.action_mailer.perform_caching = false
-
+  config.action_mailer.default charset: 'utf-8'
+  config.action_mailer.perform_caching = true
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
-  # config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
+  # Line added following rubyonrails tutorial
+  # If getting the error ActionView::Template::Error: Missing host to link to! Please provide the :host parameter, set default_url_options[:host], or set :only_path to true
+  # Add this line =>Rails.application.routes.default_url_options[:host] = 'https://christian-zamora.herokuapp.com/'
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.default_url_options = { host: 'safe-eyrie-53226.herokuapp.com' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: 'smtp.gmail.com',
+    port: 587,
+    domain: ENV['SE_HEROKU_DOMAIN'],
+    authentication: 'plain',
+    enable_starttls_auto: true,
+    user_name: ENV['GMAIL_USERNAME'],
+    password: ENV['SE_GMAIL_PASSWORD']
+  }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).

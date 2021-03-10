@@ -688,7 +688,7 @@
                 </div> <!-- single contact box -->
             </div>            
         </div> <!-- row -->
-        <div class="contact-form pt-50">
+        <div class="pt-50"> <!-- DELETED CLASS CONTACT-FORM-->
             <div class="row">
                 <div class="col-lg-6">
                     <div class="contact-map mt-50 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
@@ -699,33 +699,21 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="contact-form form-style-one mt-35 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
-                        <form  id="contact-form" action="assets/php/contact.php" method="post">
-                            <div class="form-input mt-15">
-                                <label>Tu nombre</label>
-                                <div class="input-items default">
-                                    <input type="text" placeholder="Nombre" name="name">
-                                    <i class="fa fa-user"></i>
-                                </div>
-                            </div> <!-- form input -->
-                            <div class="form-input mt-15">
-                                <label>Email</label>
-                                <div class="input-items default">
-                                    <input type="email" placeholder="Correo electronico" name="email">
-                                    <i class="fa fa-envelope"></i>
-                                </div>
-                            </div> <!-- form input -->
-                            <div class="form-input mt-15">
-                                <label>Mensaje</label>
-                                <div class="input-items default">
-                                    <textarea placeholder="Preguntas que tengas o Informacion que necesites" name="massage"></textarea>
-                                    <i class="fa fa-edit"></i>
-                                </div>
-                            </div> <!-- form input -->
-                            <p class="form-message"></p>
-                            <div class="form-input rounded-buttons mt-20">
-                                <button type="submit" class="main-btn rounded-three">ENVIAR</button>
-                            </div> <!-- form input -->
-                        </form>
+                      <%= simple_form_for @contact do |f| %>
+                        <div class="form-group">
+                            <%= f.input :name, label: false, placeholder: 'Name *', error: 'Username is mandatory, please specify one' %>
+                            <%= f.input :email, label: false, placeholder: 'E-mail *',
+                                error: 'You need to add a valid email',
+                                required: true,
+                                autofocus: true,
+                                input_html: { autocomplete: "email" } %>
+                            <%= f.input :message, label: false, placeholder: 'Message *', :as => :text, :input_html => { 'rows' => 8, 'cols' => 10 } %>
+                            </div>
+                            <%= f.button :submit, 'Send Message', class: 'send-button'%>
+                            <div class= "hidden">
+                            <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+                        </div>
+                      <% end %>
                     </div> <!-- contact form -->
                 </div>
             </div> <!-- row -->

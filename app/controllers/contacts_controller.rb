@@ -1,9 +1,10 @@
-class HomeController < ApplicationController
+class ContactsController < ApplicationController
+  require 'mail_form'
   def index
-    @contact = Contact.new 
+    @contact = Contact.new
   end
 
-  def home
+  def new
     @contact = Contact.new
   end
 
@@ -18,5 +19,5 @@ class HomeController < ApplicationController
       # render :new
       redirect_to new_contact_path, alert: 'Oops! something is wrong, can you please send me an email instead?, please'
     end
-  end 
+  end
 end
