@@ -1,0 +1,76 @@
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 5px;
+  color: #062326;
+  border: 2.5px solid #8b8c8c;
+  background-color: white; 
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #8b8c8c;
+  font-style: italic;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #8b8c8c;
+  font-style: italic;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #8b8c8c;
+  font-style: italic;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #8b8c8c;
+  font-style: italic;
+}
+
+.textarea {
+  resize: vertical;
+}
+ 
+.send-button {
+  width: 10rem;
+  outline: none;
+  border: none;
+  padding: 2%;
+  font-size: 18px;
+  font-weight: bolder;
+  background: -webkit-linear-gradient(left, #029baf 0%, #25dff7 50%, #136772 100%);
+  background: -o-linear-gradient(left, #029baf 0%, #25dff7 50%, #136772 100%);
+  background: linear-gradient(to right, #029baf 0%, #25dff7 50%, #136772 100%);
+  background-size: 200% auto;
+  border-radius: 3%;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  -webkit-transition: all 0.1s ease-out 0s;
+  -moz-transition: all 0.1s ease-out 0s;
+  -ms-transition: all 0.1s ease-out 0s;
+  -o-transition: all 0.1s ease-out 0s;
+  transition: all 0.1s ease-out 0s; 
+}
+.send-button:hover {
+  background-position: right center; 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .rounded-buttons .send-button {
+    line-height: 44px; } }
+@media (max-width: 767px) {
+  .rounded-buttons .send-button {
+    line-height: 44px; } }
+.rounded-buttons .send-button:hover {
+  background-position: right center; }
+
+.hidden { 
+  display: none;
+}
