@@ -1,5 +1,5 @@
 <!--====== PRELOADER PART START ======-->
-    <div class="preloader">
+<div class="preloader">
   <div class="loader">
       <div class="ytp-spinner">
           <div class="ytp-spinner-container">
@@ -18,6 +18,7 @@
 <!--====== PRELOADER PART END ======-->
 
 <!--====== NAVBAR PART START ======-->
+
 <section class="header-area">
     <div class="navbar-area">
         <div class="container">
@@ -66,7 +67,6 @@
     </div> <!-- navbar area -->
 
     <!---------------------- SLIDER ---------------------->
-
         <div id="home" class="slider-area">
             <div class="bd-example">
                 <div id="carouselOne" class="carousel slide" data-ride="carousel">
@@ -699,25 +699,11 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="contact-form form-style-one mt-35 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
-                      <%= simple_form_for @contact do |f| %>
-                        <div class="form-group">
-                            <%= f.input :name, label: false, placeholder: 'Nombre *', error: 'Porfavor danos tu nombre' %>
-                            <%= f.input :email, label: false, placeholder: 'Correo Electronico *',
-                                error: 'El correo no es valido',
-                                required: true,
-                                autofocus: true,
-                                input_html: { autocomplete: "email" } %>
-                            <%= f.input :message, label: false, placeholder: 'Preguntas o mensaje *', :as => :text, :input_html => { 'rows' => 8, 'cols' => 10 } %>
-                            </div>
-                            <%= f.button :submit, 'ENVIAR', class: 'send-button'%>
-                            <div class= "hidden">
-                            <%= f.input :nickname, :hint => 'Leave this field blank!' %>
-                        </div>
-                      <% end %>
+<%# <%= render 'form' %> <%= link_to "Message", new_contact_path %>
                     </div> <!-- contact form -->
                 </div>
             </div> <!-- row -->
-        </div> <!-- contact form -->
+        </div> <!-- contact form DELETED-->
     </div> <!-- container -->
   </section>
 <!--====== CONTACTANOS/contact ENDS ======-->

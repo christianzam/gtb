@@ -1,0 +1,15 @@
+  <%= simple_form_for @contact do |f| %>
+    <div class="form-group">
+        <%= f.input :name, label: false, placeholder: 'Nombre *', error: 'Porfavor danos tu nombre' %>
+        <%= f.input :email, label: false, placeholder: 'Correo Electronico *',
+            error: 'El correo no es valido',
+            required: true,
+            autofocus: true,
+            input_html: { autocomplete: "email" } %>
+        <%= f.input :message, label: false, placeholder: 'Preguntas o mensaje *', :as => :text, :input_html => { 'rows' => 8, 'cols' => 10 } %>
+        </div>
+        <%= f.button :submit, 'ENVIAR', class: 'send-button'%>
+        <div class= "hidden">
+        <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+    </div>
+  <% end %>
