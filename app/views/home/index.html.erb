@@ -25,10 +25,10 @@
             <div class="row">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg">
-                        <a class="navbar-brand" href="#"> 
+                        <span class="navbar-brand"> 
                            <img src="Gian_Tara_Bani_logo_navbar.png" height="70" width="70" alt="Logo">    
                           <%# <%=image_tag("Gian_Tara_Bani_logo_navbar.png", size: "70x70", alt: "LogoGTB")%> 
-                        </a>
+                        </span>
                         <!-- MENU ICON -->
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarEight" aria-controls="navbarEight" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="toggler-icon"></span>
@@ -691,16 +691,23 @@
         <div class="pt-50"> <!-- DELETED CLASS CONTACT-FORM-->
             <div class="row">
                 <div class="col-lg-6">
+                <%#= render 'form'%>   <%#= link_to "Message", new_contact_path %>      
+                  <div class="single-contact-box mt-50 text-center wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                      <div class="box-icon">
+                        <a href="https://www.giantarabani.life/contacts/new"><i class= "fa fa-comment" id="contact-icons"></i></a>
+                      </div>
+                      <div class="box-content">
+                        <h4 class="box-title">Mensaje Directo</h4>
+                        <p class="text">Informes</p>                        
+                      </div>
+                 </div> <!-- single contact box -->
+                </div>
+                <div class="col-lg-6">
                     <div class="contact-map mt-50 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
                         <div class="gmap_canvas">                            
                             <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Av.Jesus%20del%20Monte%2044,%20Hacienda%20de%20las%20Palmas,%20%20%20%20%20C.P.%2052763,%20Edo%20de%20Mexico&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                         </div>
                     </div> <!-- contact map -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="contact-form form-style-one mt-35 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
-<%#= render 'form'%>   <%= link_to "Message", new_contact_path %>
-                    </div> <!-- contact form -->
                 </div>
             </div> <!-- row -->
         </div> <!-- contact form DELETED-->
@@ -747,7 +754,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="footer-link">
                         <ul>
-                          <li><a href="#"><img src="Gian_Tara_Bani_logo_navbar.png" height="150" width="150" alt="Logo"></a></li>
+                          <li><img src="Gian_Tara_Bani_logo_navbar.png" height="150" width="150" alt="Logo"></li>
                         </ul>
                     </div> <!-- footer link -->
                 </div>

@@ -23,6 +23,8 @@ gem 'mail_form'
 gem 'simple_form'
 # Devise for athentication
 gem 'devise'
+# Devise for ignore keys in .env
+gem 'dotenv-rails', groups: [:development, :test]
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
