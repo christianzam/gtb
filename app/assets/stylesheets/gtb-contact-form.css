@@ -1,3 +1,15 @@
+/*===========================
+      PAGE STYLE
+===========================*/
+
+.gtb-contact-form {
+  background-color: #f4f6f7;
+}
+
+/*===========================
+     CONACT FORM
+===========================*/
+
 .form-group {
   width: 100%;
   margin-top: 20px;
@@ -11,24 +23,24 @@
   margin-top: 5px;
   padding: 5px;
   color: #062326;
-  border: 2.5px solid #8b8c8c;
+  border: 2px solid #8b8c8c;
   background-color: white; 
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #8b8c8c;
+  color: #67a5ad;
   font-style: italic;
 }
 ::-moz-placeholder { /* Firefox 19+ */
-  color: #8b8c8c;
+  color: #67a5ad;
   font-style: italic;
 }
 :-ms-input-placeholder { /* IE 10+ */
-  color: #8b8c8c;
+  color: #67a5ad;
   font-style: italic;
 }
 :-moz-placeholder { /* Firefox 18- */
-  color: #8b8c8c;
+  color: #67a5ad;
   font-style: italic;
 }
 
