@@ -1,4 +1,30 @@
 /*===========================
+      NAVBAR HOME LINK
+===========================*/
+.super-home {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  padding: 11px 16px;
+  color: #f5f7f7;
+  text-transform: uppercase;
+  position: relative;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  margin: 14px 0;  
+}
+.super-home:hover {
+  color: white;
+  text-decoration: underline solid white 5px;
+  transition: 2s;
+}
+
+/*===========================
       PAGE STYLE
 ===========================*/
 
