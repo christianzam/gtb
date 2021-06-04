@@ -26,8 +26,8 @@
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg">
                         <span class="navbar-brand"> 
-                           <img src="Gian_Tara_Bani_logo_navbar.png" height="70" width="70" alt="Logo">    
-                          <%# <%=image_tag("Gian_Tara_Bani_logo_navbar.png", size: "70x70", alt: "LogoGTB")%> 
+                           <%# <img src='Gian_Tara_Bani_logo_navbar.png' height="70" width="70" alt="Logo">    %>
+                           <%= image_tag("Gian_Tara_Bani_logo_navbar.png", size: "70x70", alt: "LogoGTB") %>  
                         </span>
                         <!-- MENU ICON -->
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarEight" aria-controls="navbarEight" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,7 +77,9 @@
                     </ol>
                     <!-- SLIDER HERO BANNER -->
                     <div class="carousel-inner">
-                        <div class="carousel-item bg_cover active" style="background-image: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.65) 100%), url('../gtb-hero-1.jpg');">
+                    <%# class="carousel-item bg_cover active" style="background-image: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.65) 100%), url('gtb-hero-1.jpg');" %>
+                        <div class="carousel-item bg_cover active">
+                            <%= image_tag("gtb-hero-1.jpg", style: "background-image: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.65) 100%)", class: "carousel-item bg_cover active", alt: "Hero Image") %> 
                             <div class="carousel-caption">
                                 <div class="container">
                                     <div class="row justify-content-center">
@@ -589,8 +591,8 @@
                                 </div>
                                 <div class="testimonial-content">
                                     <p class="text">KUNDALI YOGA | BANOS SONOROS | MEDITACION PRENATAL | HOMEOFFICE YOGA</p>
-                                    <h6 class="author-name">Marzo 2021</h6>
-                                    <span class="sub-title">Aishah Zamora - Gian Tara Bani</span>
+                                    <h6 class="author-name">Junio 2021</h6>
+                                    <span class="sub-title">Gian Tara Bani</span>
                                 </div>
                             </div> <!-- single testimonial -->
                         </div>
@@ -601,8 +603,8 @@
                                 </div>
                                 <div class="testimonial-content">
                                     <p class="text">HOMEOFFICE YOGA | BANOS SONOROS| YOGA | MEDITACION</p>
-                                    <h6 class="author-name">Febrero 2021</h6>
-                                    <span class="sub-title">Aishah Zamora - Gian Tara Bani</span>
+                                    <h6 class="author-name">Mayo 2021</h6>
+                                    <span class="sub-title">Gian Tara Bani</span>
                                 </div>
                             </div> <!-- single testimonial -->
                         </div>
@@ -613,8 +615,8 @@
                                 </div>
                                 <div class="testimonial-content">
                                     <p class="text">KUNDALI YOGA | BANOS SONOROS | MEDITACION PRENATAL | HOMEOFFICE YOGA</p>
-                                    <h6 class="author-name">Enero 2021</h6>
-                                    <span class="sub-title">Aishah Zamora - Gian Tara Bani</span>
+                                    <h6 class="author-name">Abril 2021</h6>
+                                    <span class="sub-title">Gian Tara Bani</span>
                                 </div>
                             </div> <!-- single testimonial -->
                         </div>
@@ -625,23 +627,12 @@
                                 </div>
                                 <div class="testimonial-content">
                                     <p class="text">CONCIERTO | RITUAL  | BANO DEPURACION</p>
-                                    <h6 class="author-name">DICIEMBRE 2020</h6>
-                                    <span class="sub-title">Aishah Zamora - Gian Tara Bani</span>
+                                    <h6 class="author-name">Marzo 2020</h6>
+                                    <span class="sub-title">Gian Tara Bani</span>
                                 </div>
                             </div> <!-- single testimonial -->
                         </div>
-                        <div class="col-lg-4">
-                            <div class="single-testimonial mt-30 mb-30 text-center">
-                                <div>
-                                    <img src="conocenos-nov20.jpg" alt="Author">
-                                </div>
-                                <div class="testimonial-content">
-                                    <p class="text">TECNICAS DE RESPIRACION | MEDITACION | HOMEOFFICE YOGA</p>
-                                    <h6 class="author-name">Noviembre 2020</h6>
-                                    <span class="sub-title">Aishah Zamora - Gian Tara Bani</span>
-                                </div>
-                            </div> <!-- single testimonial -->
-                        </div>
+
                     </div> <!-- row -->
                 </div>
             </div> <!-- row -->
