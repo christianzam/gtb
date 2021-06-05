@@ -77,9 +77,9 @@
                     </ol>
                     <!-- SLIDER HERO BANNER -->
                     <div class="carousel-inner">
-                    <%# class="carousel-item bg_cover active" style="background-image: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.65) 100%), url('gtb-hero-1.jpg');" %>
-                        <div class="carousel-item bg_cover active">
-                            <%= image_tag("gtb-hero-1.jpg", style: "background-image: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.65) 100%)", class: "carousel-item bg_cover active", alt: "Hero Image") %> 
+                        <%# <div class="carousel-item bg_cover active" style="background-image: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.65) 100%), url('gtb-hero-1.jpg');"> %>
+                        <div class="carousel-item bg_cover_kids active" style="background-image: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.65) 100%)">
+                            <%= image_tag("gtb-hero-1.jpg", class: "bg_cover_kids", alt: "Hero Image")%>
                             <div class="carousel-caption">
                                 <div class="container">
                                     <div class="row justify-content-center">
@@ -93,8 +93,10 @@
                                 </div> <!-- container -->
                             </div> <!-- carousel caption -->
                         </div> <!-- carousel-item -->
-
-                        <div class="carousel-item bg_cover" style="background-image: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.2) 100%), url('../gtb-2.png');">
+                    <!-- HERO BANNER - 2 -->
+                            <%# <div class="carousel-item bg_cover" style="background-image: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.2) 100%), url('../gtb-2.png');"> %>
+                            <div class="carousel-item bg_cover_kids" style= "background-image: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.2) 100%)">
+                            <%= image_tag("gtb-hero-2.png", class: "bg_cover_kids", alt: "2nd Hero Image") %> 
                             <div class="carousel-caption">
                                 <div class="container">
                                     <div class="row justify-content-center">
@@ -111,8 +113,9 @@
                                 </div> <!-- container -->
                             </div> <!-- carousel caption -->
                         </div> <!-- carousel-item -->
-
-                        <div class="carousel-item bg_cover" style="background-image: linear-gradient(rgba(0,10,0,0.2), rgba(0,30,0,0.4)), url('../gtb-hero-3.jpg');">
+                    <!-- HERO BANNER - 3 -->
+                        <div class="carousel-item bg_cover_kids" style="background-image: linear-gradient(rgba(0,10,0,0.2), rgba(0,30,0,0.4))">
+                        <%= image_tag("gtb-hero-3.jpg", class: "bg_cover_kids", alt: "3rd Hero Image") %> 
                             <div class="carousel-caption">
                                 <div class="container">
                                     <div class="row justify-content-center">
@@ -129,8 +132,9 @@
                                 </div> <!-- container -->
                             </div> <!-- carousel caption -->
                         </div> <!-- carousel-item -->                    
-
-                          <div class="carousel-item bg_cover" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../gtb-hero-4.png');">
+                    <!-- HERO BANNER - 4 -->
+                          <div class="carousel-item bg_cover_kids">
+                          <%=image_tag("gtb-hero-4.png", class: "bg_cover_kids", alt: "4th Hero Image")%>
                             <div class="carousel-caption">
                                 <div class="container">
                                     <div class="row justify-content-center">
@@ -142,13 +146,13 @@
                                                 <!-- <li><a class="main-btn rounded-three" href="#">GET STARTED</a></li>
                                                 <li><a class="main-btn rounded-one" href="#">DOWNLOAD</a></li> -->
                                             </ul>
-                                        </div>
+                                        </div> <!--col-->
                                     </div> <!-- row -->
                                 </div> <!-- container -->
                             </div> <!-- carousel caption -->
                         </div> <!-- carousel-item -->
                     </div> <!-- carousel-inner -->
-
+                    <!-- END OF HERO IMAGES -->
                     <a class="carousel-control-prev" href="#carouselOne" role="button" data-slide="prev">
                         <span><</span>
                     </a>
@@ -208,8 +212,8 @@
                         <div class="col-md-6">
                             <div class="about-content-2 mt-40 d-sm-flex wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
                                 <div class="about-icon">
-                                  <img src="que-hacemos-1.jpg" height="100" width="100" alt="Icon">
-                                  <!-- <i class="lni-laptop-phone"></i> -->
+                                  <%# <img src="que-hacemos-1.jpg" height="100" width="100" alt="Icon"> %>
+                                  <%=image_tag("que-hacemos-1.jpg", style: 'width: 100px; height: 100px', alt: "image")%>
                                 </div>
                                 <div class="about-content media-body">
                                     <h4 class="about-title">Mantras Motivacionales</h4>
@@ -220,8 +224,8 @@
                         <div class="col-md-6">
                             <div class="about-content-2 mt-40 d-sm-flex wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
                                 <div class="about-icon">
-                                  <img src="que-hacemos-2.jpg" height="100" width="100" alt="Icon">
-                                  <!-- <i class="lni-laptop-phone"></i> -->
+                                  <%# <img src="que-hacemos-2.jpg" height="100" width="100" alt="Icon"> %>
+                                  <%=image_tag("que-hacemos-2.jpg", style: 'width: 100px; height: 100px', alt: "image")%>
                                 </div>
                                 <div class="about-content media-body">
                                     <h4 class="about-title">Disenado <br> para todos</h4>
@@ -232,8 +236,8 @@
                         <div class="col-md-6">
                             <div class="about-content-2 mt-40 d-sm-flex wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.9s">
                                 <div class="about-icon">
-                                  <img src="que-hacemos-3.jpg" height="100" width="100" alt="Icon">
-                                  <!-- <i class="lni-laptop-phone"></i> -->
+                                  <%# <img src="que-hacemos-3.jpg" height="100" width="100" alt="Icon"> %>
+                                  <%=image_tag("que-hacemos-3.jpg", style: 'width: 100px; height: 100px', alt: "image")%>
                                 </div>
                                 <div class="about-content media-body">
                                     <h4 class="about-title">Recetas para cargar energia</h4>
@@ -244,8 +248,8 @@
                         <div class="col-md-6">
                             <div class="about-content-2 mt-40 d-sm-flex wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">
                                 <div class="about-icon">
-                                    <img src="que-hacemos-4.jpg" height="100" width="100" alt="Icon">
-                                    <!-- <i class="lni-laptop-phone"></i> -->
+                                    <%# <img src="que-hacemos-4.jpg" height="100" width="100" alt="Icon"> %>
+                                    <%=image_tag("que-hacemos-4.jpg", style: 'width: 100px; height: 100px', alt: "image")%>
                                 </div>
                                 <div class="about-content media-body">
                                     <h4 class="about-title">Meditacion</h4>
@@ -259,7 +263,8 @@
         </div> <!-- container -->
         <div class="about-image d-lg-flex align-items-center">
             <div class="image wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.6s" data-wow-offset="50">
-                <img src="que-hacemos-6.jpg" alt="about">
+                <%# <img src="que-hacemos-6.jpg" alt="about"> %>
+                <%=image_tag("que-hacemos-6.jpg", alt: "image")%>
             </div>
         </div> <!-- services image -->
     </section>
