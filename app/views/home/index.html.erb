@@ -124,8 +124,6 @@
                                             <BR>
                                             <span class="gtb-hero-SUBtitle-3">YOGA&nbsp;KUNDALINI&nbsp;PARA&nbsp;NINOS</span> 
                                             <ul class="carousel-btn rounded-buttons">
-                                                <!-- <li><a class="main-btn rounded-three" href="#">GET STARTED</a></li>
-                                                <li><a class="main-btn rounded-one" href="#">DOWNLOAD</a></li> -->
                                             </ul>
                                         </div>
                                     </div> <!-- row -->
@@ -143,8 +141,6 @@
                                             <BR>
                                             <span class="gtb-hero-SUBtitle-4">EN LINEA &nbsp;Y&nbsp; PRESENCIAL</span> 
                                             <ul class="carousel-btn rounded-buttons">
-                                                <!-- <li><a class="main-btn rounded-three" href="#">GET STARTED</a></li>
-                                                <li><a class="main-btn rounded-one" href="#">DOWNLOAD</a></li> -->
                                             </ul>
                                         </div> <!--col-->
                                     </div> <!-- row -->
@@ -224,7 +220,6 @@
                         <div class="col-md-6">
                             <div class="about-content-2 mt-40 d-sm-flex wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
                                 <div class="about-icon">
-                                  <%# <img src="que-hacemos-2.jpg" height="100" width="100" alt="Icon"> %>
                                   <%=image_tag("que-hacemos-2.jpg", style: 'width: 100px; height: 100px', alt: "image")%>
                                 </div>
                                 <div class="about-content media-body">
@@ -236,7 +231,6 @@
                         <div class="col-md-6">
                             <div class="about-content-2 mt-40 d-sm-flex wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.9s">
                                 <div class="about-icon">
-                                  <%# <img src="que-hacemos-3.jpg" height="100" width="100" alt="Icon"> %>
                                   <%=image_tag("que-hacemos-3.jpg", style: 'width: 100px; height: 100px', alt: "image")%>
                                 </div>
                                 <div class="about-content media-body">
@@ -248,7 +242,6 @@
                         <div class="col-md-6">
                             <div class="about-content-2 mt-40 d-sm-flex wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">
                                 <div class="about-icon">
-                                    <%# <img src="que-hacemos-4.jpg" height="100" width="100" alt="Icon"> %>
                                     <%=image_tag("que-hacemos-4.jpg", style: 'width: 100px; height: 100px', alt: "image")%>
                                 </div>
                                 <div class="about-content media-body">
@@ -263,7 +256,6 @@
         </div> <!-- container -->
         <div class="about-image d-lg-flex align-items-center">
             <div class="image wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.6s" data-wow-offset="50">
-                <%# <img src="que-hacemos-6.jpg" alt="about"> %>
                 <%=image_tag("que-hacemos-6.jpg", alt: "image")%>
             </div>
         </div> <!-- services image -->
@@ -298,11 +290,15 @@
             <div class="col-lg-4 col-sm-6 yoga-3">
                 <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
                     <div class="portfolio-image">
-                        <img src="s1b-pequeno-yogui.png" alt="">
+                        <%# <img src="s1b-pequeno-yogui.png" alt=""> %>
+                        <%=image_tag("s1b-pequeno-yogui.png", alt: "image")%>
                         <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                             <div class="portfolio-content">
                                 <div class="portfolio-icon">
-                                    <a class="image-popup" href="s1a-pequeno-yogui.jpg"><i class="fa fa-search-plus"></i></a>
+                                  <%# <a class="image-popup" href="s1a-pequeno-yogui.jpg"><i class="fa fa-search-plus"></i></a> %>
+                                  <%= link_to asset_path("s1a-pequeno-yogui.jpg"), :class => "image-popup" do %>
+                                    <%= content_tag(:href, content_tag(:i, ""), class: "fa fa-search-plus") %>
+                                  <% end %> 
                                 </div>
                                 <!-- <div class="portfolio-icon">
                                     <a href="#"><i class="lni-link"></i></a>
@@ -319,7 +315,8 @@
             <div class="col-lg-4 col-sm-6 yoga-3">
                 <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s">
                     <div class="portfolio-image">
-                        <img src="s2b-yoga-kundalini-handpan.jpg" alt="">
+                        <%# <img src="s2b-yoga-kundalini-handpan.jpg" alt=""> %>
+                        <%= image_tag("s2b-yoga-kundalini-handpan.jpg", alt: "image") %>
                         <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                             <div class="portfolio-content">
                                 <div class="portfolio-icon">
