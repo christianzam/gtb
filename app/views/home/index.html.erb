@@ -168,7 +168,7 @@
     </div>
     <div class="sidebar-content">
       <div class="sidebar-logo text-center">
-        <a href="#"><img src="Gian_Tara_Bani_logo_navbar.png" alt="Logo"></a>
+        <a href="#"><%= image_tag("Gian_Tara_Bani_logo_navbar.png", alt: "image") %></a>
       </div> <!-- logo -->
     <div class="sidebar-menu">
       <ul>
@@ -260,7 +260,7 @@
             </div>
         </div> <!-- services image -->
     </section>
-<!--====== QUE HACEMOS?/about PART ENDS ======-->
+<!--====== QUE HACEMOS? PART ENDS ======-->
 
 <!--====== SERVICES/portfolio PART START ======-->
   <section id="servicios" class="portfolio-area">
@@ -300,14 +300,11 @@
                                     <%= content_tag(:href, content_tag(:i, ""), class: "fa fa-search-plus") %>
                                   <% end %> 
                                 </div>
-                                <!-- <div class="portfolio-icon">
-                                    <a href="#"><i class="lni-link"></i></a>
-                                </div> -->
                             </div>
                         </div>
                     </div>
                     <div class="portfolio-text">
-                        <h4 class="portfolio-title"><a href="#">Pequeño Yogui</a></h4>
+                        <h4 class="portfolio-title">Pequeño Yogui</h4>
                         <p class="text">Kundalini Yoga para niños de 3 a 12 años. Posturas de Yoga, respiraciones consientes, juegos y Meditación con Comunicación Celestial componen la energía de esta clase. En esta clase los niños liberan estrés, emociones de su día a día y aprenden a meditar de una forma divertida y fácil cantando y bailando mantras de Kundalini Yoga.</p>
                     </div>
                 </div> <!-- single portfolio -->
@@ -320,16 +317,16 @@
                         <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                             <div class="portfolio-content">
                                 <div class="portfolio-icon">
-                                    <a class="image-popup" href="s2a-yoga-kundali-handpan.jpg"><i class="fa fa-search-plus"></i></a>
+                                    <%# <a class="image-popup" href="s2a-yoga-kundali-handpan.jpg"><i class="fa fa-search-plus"></i></a> %>
+                                  <%= link_to asset_path("s2a-yoga-kundali-handpan.jpg"), :class => "image-popup" do %>
+                                    <%= content_tag(:href, content_tag(:i, ""), class: "fa fa-search-plus") %>
+                                  <% end %> 
                                 </div>
-                                <!-- <div class="portfolio-icon">
-                                    <a href="#"><i class="lni-link"></i></a>
-                                </div> -->
                             </div>
                         </div>
                     </div>
                     <div class="portfolio-text">
-                        <h4 class="portfolio-title"><a href="#">Yoga Kundalini con Handpan</a></h4>
+                        <h4 class="portfolio-title">Yoga Kundalini con Handpan</h4>
                         <p class="text">El sonido suave sobre el cuerpo y la mente ayuda a desconectarse del mundo, a encontrar el equilibrio y auto-sanación. Durante esta clase la música es un elemento central que ayuda a concentrarse en el “yo”, apreciando las sensaciones que tu cuerpo transmite e incluso, sentir por unos minutos que el alma abandona el cuerpo para sanarlo.</p>
                     </div>
                 </div> <!-- single portfolio -->
@@ -337,20 +334,21 @@
             <div class="col-lg-4 col-sm-6 meditacion-3">
                 <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
                     <div class="portfolio-image">
-                        <img src="s3-meditando-handpan.jpg" alt="">
+                        <%# <img src="s3-meditando-handpan.jpg" alt=""> %>
+                        <%= image_tag("s3-meditando-handpan.jpg", alt: "image") %>
                         <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                             <div class="portfolio-content">
                                 <div class="portfolio-icon">
-                                    <a class="image-popup" href="s3-meditando-handpan.jpg"><i class="fa fa-search-plus"></i></a>
+                                    <%# <a class="image-popup" href="s3-meditando-handpan.jpg"><i class="fa fa-search-plus"></i></a> %>
+                                    <%= link_to asset_path("s3-meditando-handpan.jpg"), :class => "image-popup" do %>
+                                    <%= content_tag(:href, content_tag(:i, ""), class: "fa fa-search-plus") %>
+                                  <% end %> 
                                 </div>
-                                <!-- <div class="portfolio-icon">
-                                    <a href="#"><i class="lni-link"></i></a>
-                                </div> -->
                             </div>
                         </div>
                     </div>
                     <div class="portfolio-text">
-                        <h4 class="portfolio-title"><a href="#">Meditar con Handpan</a></h4>
+                        <h4 class="portfolio-title">Meditar con Handpan</h4>
                         <p class="text">Es un espacio que combina la meditación y el sonido.Te ayudara a conectar tu interior, a desarrollar tu intuición mediante la resonancia del sonido armónico del Hanpand; produciendo patrones de actividad eléctrica cerebral que detonaran procesos cognitivos y funciones corporales armónicas, brindando un estado de tranquilidad y sanación. ¡Ven a trabajar el sonido armonico de tu mente!
                         </p>
                     </div>
@@ -359,20 +357,21 @@
             <div class="col-lg-4 col-sm-6 grupos-3">
                 <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
                     <div class="portfolio-image">
-                        <img src="s4b-charan-jaap.jpg" alt="">
+                        <%# <img src="s4b-charan-jaap.jpg" alt=""> %>
+                        <%= image_tag("s4b-charan-jaap.jpg", alt: "image") %>
                         <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                             <div class="portfolio-content">
                                 <div class="portfolio-icon">
-                                    <a class="image-popup" href="s4a-charan-jaap.jpg"><i class="fa fa-search-plus"></i></a>
+                                    <%# <a class="image-popup" href="s4a-charan-jaap.jpg"><i class="fa fa-search-plus"></i></a> %>
+                                    <%= link_to asset_path("s4a-charan-jaap.jpg"), :class => "image-popup" do %>
+                                    <%= content_tag(:href, content_tag(:i, ""), class: "fa fa-search-plus") %>
+                                  <% end %>
                                 </div>
-                                <!-- <div class="portfolio-icon">
-                                    <a href="#"><i class="lni-link"></i></a>
-                                </div> -->
                             </div>
                         </div>
                     </div>
                     <div class="portfolio-text">
-                        <h4 class="portfolio-title"><a href="#">Chara Jaap</a></h4>
+                        <h4 class="portfolio-title">Chara Jaap</h4>
                         <p class="text">Charan = los pies de loto de Dios. Jaap = repetición, meditación, o meditación de repetición. En conjunto su traducción es: «Profunda meditación repetitiva de un mantra con los pies». Es un excelente ejercicio de coordinación y enfoque en el que acostumbramos a la mente a ir junto con el cuerpo. Tu salón de clases es enorme, es un conjunto de arboles, ambiente en la naturaleza, te conviertes en una parte de ese bosque.</p>
                     </div>
                 </div> <!-- single portfolio -->
@@ -380,20 +379,21 @@
             <div class="col-lg-4 col-sm-6 grupos-3">
                 <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s">
                     <div class="portfolio-image">
-                        <img src="s5b-ceremonia.jpg" alt="">
+                        <%# <img src="s5b-ceremonia.jpg" alt=""> %>
+                        <%= image_tag("s5b-ceremonia.jpg", alt: "image") %>
                         <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                             <div class="portfolio-content">
                                 <div class="portfolio-icon">
-                                    <a class="image-popup" href="s5a-ceremonia.jpg"><i class="fa fa-search-plus"></i></a>
+                                    <%# <a class="image-popup" href="s5a-ceremonia.jpg"><i class="fa fa-search-plus"></i></a> %>
+                                    <%= link_to asset_path("s5a-ceremonia.jpg"), :class => "image-popup" do %>
+                                    <%= content_tag(:href, content_tag(:i, ""), class: "fa fa-search-plus") %>
+                                  <% end %>
                                 </div>
-                                <!-- <div class="portfolio-icon">
-                                    <a href="#"><i class="lni-link"></i></a>
-                                </div> -->
                             </div>
                         </div>
                     </div>
                     <div class="portfolio-text">
-                        <h4 class="portfolio-title"><a href="#">Ceremonia</a></h4>
+                        <h4 class="portfolio-title">Ceremonia</h4>
                         <p class="text">En el día 120 la Fuerza Creativa le concede la encarnación completa al alma y ese mismo día, el punto del ombligo de la madre se activa para nutrir el Alma del bebé. La radiancia y el estado de conciencia de la madre es lo que atraerá el alma ideal para el bebé que está esperando. A partir de este momento el estado de conciencia del bebé empezará a crecer y su subconsciente se empezará a formar según lo que la madre piense, sienta o diga, el bebé recibirá y absorberá todo a través de ella. En la “Ceremonia de Bendición de 120 días” la mujer es honrada con la llegada de una alma.</p>
                     </div>
                 </div> <!-- single portfolio -->
@@ -401,20 +401,21 @@
             <div class="col-lg-4 col-sm-6 grupos-3">
                 <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
                     <div class="portfolio-image">
-                        <img src="s6a-circulo-mujeres.png" alt="">
+                        <%# <img src="s6a-circulo-mujeres.png" alt=""> %>
+                        <%= image_tag("s6a-circulo-mujeres.png", alt: "image") %>
                         <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                             <div class="portfolio-content">
                                 <div class="portfolio-icon">
-                                    <a class="image-popup" href="s6b-circulo-mujeres.png"><i class="fa fa-search-plus"></i></a>
+                                    <%# <a class="image-popup" href="s6b-circulo-mujeres.png"><i class="fa fa-search-plus"></i></a> %>
+                                    <%= link_to asset_path("s6b-circulo-mujeres.png"), :class => "image-popup" do %>
+                                    <%= content_tag(:href, content_tag(:i, ""), class: "fa fa-search-plus") %>
+                                  <% end %>
                                 </div>
-                                <!-- <div class="portfolio-icon">
-                                    <a href="#"><i class="lni-link"></i></a>
-                                </div> -->
                             </div>
                         </div>
                     </div>
                     <div class="portfolio-text">
-                        <h4 class="portfolio-title"><a href="#">Circulo de Mujeres</a></h4>
+                        <h4 class="portfolio-title">Circulo de Mujeres</h4>
                         <p class="text">Es un espacio de reunión de Mujeres, un espacio sagrado de sanación y celebración. En donde las mujeres silenciosamente se nutren y fortalecen el despertar femenino.El poder de los círculos de mujeres está ligado al vínculo Mujer-Luna, es una forma de volver a reconocer la sincronía del ciclo lunar y el nuestro, comenzamos a despertar la conexión con la naturaleza y la Tierra.</p>
                     </div>
                 </div> <!-- single portfolio -->
@@ -422,20 +423,21 @@
             <div class="col-lg-4 col-sm-6 meditacion-3">
                 <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
                     <div class="portfolio-image">
-                        <img src="s7a-meditando-ando.png" alt="">
+                        <%# <img src="s7a-meditando-ando.png" alt=""> %>
+                        <%= image_tag("s7a-meditando-ando.png", alt: "image") %>
                         <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                             <div class="portfolio-content">
                                 <div class="portfolio-icon">
-                                    <a class="image-popup" href="s7b-meditando-ando.png"><i class="fa fa-search-plus"></i></a>
+                                    <%# <a class="image-popup" href="s7b-meditando-ando.png"><i class="fa fa-search-plus"></i></a> %>
+                                    <%= link_to asset_path("s7b-meditando-ando.png"), :class => "image-popup" do %>
+                                    <%= content_tag(:href, content_tag(:i, ""), class: "fa fa-search-plus") %>
+                                  <% end %>
                                 </div>
-                                <!-- <div class="portfolio-icon">
-                                    <a href="#"><i class="lni-link"></i></a>
-                                </div> -->
                             </div>
                         </div>
                     </div>
                     <div class="portfolio-text">
-                        <h4 class="portfolio-title"><a href="#">Meditando-Ando</a></h4>
+                        <h4 class="portfolio-title">Meditando-Ando</h4>
                         <p class="text">La mente está sintonizada con el intelecto, creando pensamientos relacionados con emociones y temperamento.Estos se convierten en deseos y el deseo al cuerpo para concebir creatividad. ¡Ven a experimentar la creatividad de tu mente! Aprenderás diferentes estadios y preparaciones para la meditación</p>
                     </div>
                 </div> <!-- single portfolio -->
@@ -443,20 +445,21 @@
             <div class="col-lg-4 col-sm-6 meditacion-3">
                 <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
                     <div class="portfolio-image">
-                        <img src="s8a-meditacion-mantras.png" alt="">
+                        <%# <img src="s8a-meditacion-mantras.png" alt=""> %>
+                        <%= image_tag("s8a-meditacion-mantras.png", alt: "image") %>
                         <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                             <div class="portfolio-content">
                                 <div class="portfolio-icon">
-                                    <a class="image-popup" href="s8b-meditacion-mantras.png"><i class="fa fa-search-plus"></i></a>
+                                    <%# <a class="image-popup" href="s8b-meditacion-mantras.png"><i class="fa fa-search-plus"></i></a> %>
+                                    <%= link_to asset_path("s8b-meditacion-mantras.png"), :class => "image-popup" do %>
+                                    <%= content_tag(:href, content_tag(:i, ""), class: "fa fa-search-plus") %>
+                                  <% end %>
                                 </div>
-                                <!-- <div class="portfolio-icon">
-                                    <a href="#"><i class="lni-link"></i></a>
-                                </div> -->
                             </div>
                         </div>
                     </div>
                     <div class="portfolio-text">
-                        <h4 class="portfolio-title"><a href="#">Meditacion con Mantras</a></h4>
+                        <h4 class="portfolio-title">Meditacion con Mantras</h4>
                         <p class="text">Mediante mantras y meditación crearás una comunicación entre tu mente y cuerpo, fomentando tu capacidad de concentración, conciencia y claridad mental. Al encontrar el sonido de los mantras y resonar en ti, experimentarás un flujo a través de la vibración, impactando la proyección de la mente. ¡Vive la experiencia!</p>
                     </div>
                 </div> <!-- single portfolio -->
@@ -464,20 +467,21 @@
             <div class="col-lg-4 col-sm-6 instrumentos-3">
                 <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
                     <div class="portfolio-image">
-                        <img src="s9a-bano-gong.jpg" alt="">
+                        <%# <img src="s9a-bano-gong.jpg" alt=""> %>
+                        <%= image_tag("s9a-bano-gong.jpg", alt: "image") %>
                         <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                             <div class="portfolio-content">
                                 <div class="portfolio-icon">
-                                    <a class="image-popup" href="s9a-bano-gong.jpg"><i class="fa fa-search-plus"></i></a>
+                                    <%# <a class="image-popup" href="s9a-bano-gong.jpg"><i class="fa fa-search-plus"></i></a> %>
+                                    <%= link_to asset_path("s9a-bano-gong.jpg"), :class => "image-popup" do %>
+                                    <%= content_tag(:href, content_tag(:i, ""), class: "fa fa-search-plus") %>
+                                  <% end %>
                                 </div>
-                                <!-- <div class="portfolio-icon">
-                                    <a href="#"><i class="lni-link"></i></a>
-                                </div> -->
                             </div>
                         </div>
                     </div>
                     <div class="portfolio-text">
-                        <h4 class="portfolio-title"><a href="#">Baño de Gong</a></h4>
+                        <h4 class="portfolio-title">Baño de Gong</h4>
                         <p class="text">Mediante la vibración y la frecuencia reduciras el estrés, alterar la conciencia y crear una profunda sensación de bienestar para una mejor salud. Estas frecuencias de sonido en un Baño de Gong en vivo estimulan la actividad celular del sistema nervioso, con efectos terapéuticos. ¡Descubre los beneficios por ti mismo</p>
                     </div>
                 </div> <!-- single portfolio -->
@@ -485,20 +489,21 @@
             <div class="col-lg-4 col-sm-6 instrumentos-3">
                 <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
                     <div class="portfolio-image">
-                        <img src="s10a-armonizacion-cuencos.jpg" alt="">
+                        <%# <img src="s10a-armonizacion-cuencos.jpg" alt=""> %>
+                        <%= image_tag("s10a-armonizacion-cuencos.jpg", alt: "image") %>
                         <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                             <div class="portfolio-content">
                                 <div class="portfolio-icon">
-                                    <a class="image-popup" href="s10a-armonizacion-cuencos.jpg"><i class="fa fa-search-plus"></i></a>
+                                    <%# <a class="image-popup" href="s10a-armonizacion-cuencos.jpg"><i class="fa fa-search-plus"></i></a> %>
+                                    <%= link_to asset_path("s10a-armonizacion-cuencos.jpg"), :class => "image-popup" do %>
+                                    <%= content_tag(:href, content_tag(:i, ""), class: "fa fa-search-plus") %>
+                                  <% end %>
                                 </div>
-                                <!-- <div class="portfolio-icon">
-                                    <a href="#"><i class="lni-link"></i></a>
-                                </div> -->
                             </div>
                         </div>
                     </div>
                     <div class="portfolio-text">
-                        <h4 class="portfolio-title"><a href="#">Armonizacion con Cuencos</a></h4>
+                        <h4 class="portfolio-title">Armonizacion con Cuencos</h4>
                         <p class="text">En esta clase tendrás una terapia sonora para relajarte profundamente, liberaras estrés físico y emocional. Se practica en postura de Savasana, escuchando sonidos de los cuencos que te armonizaran. Se recomienda venir con ropa cómoda y la mejor actitud para descansar, sanar y soltar.</p>
                     </div>
                 </div> <!-- single portfolio -->
@@ -506,11 +511,15 @@
             <div class="col-lg-4 col-sm-6 yoga-3">
                 <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
                     <div class="portfolio-image">
-                        <img src="s11a-yoga-gong.jpg" alt="">
+                        <%# <img src="s11a-yoga-gong.jpg" alt=""> %>
+                        <%= image_tag("s11a-yoga-gong.jpg", alt: "image") %>
                         <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                             <div class="portfolio-content">
                                 <div class="portfolio-icon">
-                                    <a class="image-popup" href="s11b-yoga-gong.jpg"><i class="fa fa-search-plus"></i></a>
+                                    <%# <a class="image-popup" href="s11b-yoga-gong.jpg"><i class="fa fa-search-plus"></i></a> %>
+                                    <%= link_to asset_path("s11b-yoga-gong.jpg"), :class => "image-popup" do %>
+                                    <%= content_tag(:href, content_tag(:i, ""), class: "fa fa-search-plus") %>
+                                  <% end %>
                                 </div>
                                 <!-- <div class="portfolio-icon">
                                     <a href="#"><i class="lni-link"></i></a>
@@ -519,7 +528,7 @@
                         </div>
                     </div>
                     <div class="portfolio-text">
-                        <h4 class="portfolio-title"><a href="#">Yoga Kundalini + Gong</a></h4>
+                        <h4 class="portfolio-title">Yoga Kundalini + Gong</h4>
                         <p class="text">Es una clase para limpiar la mente, liberar el estrés del día a día, despertar el subconsciente, retirar bloqueos energéticos. Mediante vibración sónica que acalla los pensamientos sustentados de emociones desestabilizadoras; siendo el GONG el instrumento de reestructuración mental. ¡Ven y vive la experiencia de crear un estado extraordinario de conciencia, conectando la realidad con el infinito!. Grupos mixtos, no se requiere experiencia previa en ningún tipo de Yoga.</p>
                     </div>
                 </div> <!-- single portfolio -->
@@ -527,20 +536,21 @@
             <div class="col-lg-4 col-sm-6 yoga-3">
                 <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
                     <div class="portfolio-image">
-                        <img src="s10b-armonizacion-cuencos.jpg" alt="">
+                        <%# <img src="s10b-armonizacion-cuencos.jpg" alt=""> %>
+                        <%= image_tag("s10b-armonizacion-cuencos.jpg", alt: "image") %>
                         <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                             <div class="portfolio-content">
                                 <div class="portfolio-icon">
-                                    <a class="image-popup" href="s11b-yoga-gong.jpg"><i class="fa fa-search-plus"></i></a>
-                                </div>
-                                <!-- <div class="portfolio-icon">
-                                    <a href="#"><i class="lni-link"></i></a>
-                                </div> -->
+                                    <%# <a class="image-popup" href="s11b-yoga-gong.jpg"><i class="fa fa-search-plus"></i></a> %>
+                                    <%= link_to asset_path("s11b-yoga-gong.jpg"), :class => "image-popup" do %>
+                                    <%= content_tag(:href, content_tag(:i, ""), class: "fa fa-search-plus") %>
+                                  <% end %>
+                                </div>                           
                             </div>
                         </div>
                     </div>
                     <div class="portfolio-text">
-                        <h4 class="portfolio-title"><a href="#">Yoga Kundalini + Cuencos</a></h4>
+                        <h4 class="portfolio-title">Yoga Kundalini + Cuencos</h4>
                         <p class="text">En esta clase aprenderás diferentes técnicas de meditación y posturas de Kundalini Yoga, trabajando con tu mente para liberarte del estrés del día a día, concluyendo con una relajación profunda escuchando sonidos de CUENCOS que armonizaran todos tus sentidos.</p>
                     </div>
                 </div> <!-- single portfolio -->
@@ -548,20 +558,21 @@
             <div class="col-lg-4 col-sm-6 yoga-3">
                 <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
                     <div class="portfolio-image">
-                        <img src="s12-yoga-kundalini.jpg" alt="">
+                        <%# <img src="s12-yoga-kundalini.jpg" alt=""> %>
+                        <%= image_tag("s12-yoga-kundalini.jpg", alt: "image") %>
                         <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                             <div class="portfolio-content">
                                 <div class="portfolio-icon">
-                                    <a class="image-popup" href="s12-yoga-kundalini.jpg"><i class="fa fa-search-plus"></i></a>
+                                    <%# <a class="image-popup" href="s12-yoga-kundalini.jpg"><i class="fa fa-search-plus"></i></a> %>
+                                    <%= link_to asset_path("s12-yoga-kundalini.jpg"), :class => "image-popup" do %>
+                                    <%= content_tag(:href, content_tag(:i, ""), class: "fa fa-search-plus") %>
+                                  <% end %>
                                 </div>
-                                <!-- <div class="portfolio-icon">
-                                    <a href="#"><i class="lni-link"></i></a>
-                                </div> -->
                             </div>
                         </div>
                     </div>
                     <div class="portfolio-text">
-                        <h4 class="portfolio-title"><a href="#">Yoga Kundalini</a></h4>
+                        <h4 class="portfolio-title">Yoga Kundalini</h4>
                         <p class="text">Yoga Kundalini es el Yoga de la "CONCIENCIA" de cada mente humana, una disciplina ancestral para la energía Interior. Aprenderás alineaciones del cuerpo y posturas, diferentes técnicas de Meditación que ayudaran a liberarte del estrés del día a día, entrando a un espacio de relajación profunda. Estos elementos te recuerdan lo que ya eres, llevándote a la experiencia práctica del infinito, teniendo como resultado un cuerpo físico sano, una mente neutral y una conexión con tu interior. Ven y vive la experiencia de empoderarte a ti mism@. Grupos mixtos, no se requiere experiencia</p>
                     </div>
                 </div> <!-- single portfolio -->
@@ -589,7 +600,8 @@
                         <div class="col-lg-4">
                             <div class="single-testimonial mt-30 mb-30 text-center">
                                 <div>
-                                    <img src="conocenos-mar21.jpg" alt="Author">
+                                    <%# <img src="conocenos-mar21.jpg" alt="Author"> %>
+                                    <%= image_tag("conocenos-mar21.jpg", alt: "image") %>
                                 </div>
                                 <div class="testimonial-content">
                                     <p class="text">KUNDALI YOGA | BANOS SONOROS | MEDITACION PRENATAL | HOMEOFFICE YOGA</p>
@@ -601,7 +613,8 @@
                         <div class="col-lg-4">
                             <div class="single-testimonial mt-30 mb-30 text-center">
                                 <div>
-                                    <img src="conocenos-feb21.jpg" alt="Author">
+                                    <%# <img src="conocenos-feb21.jpg" alt="Author"> %>
+                                    <%= image_tag("conocenos-feb21.jpg", alt: "image") %>
                                 </div>
                                 <div class="testimonial-content">
                                     <p class="text">HOMEOFFICE YOGA | BANOS SONOROS| YOGA | MEDITACION</p>
@@ -613,7 +626,8 @@
                         <div class="col-lg-4">
                             <div class="single-testimonial mt-30 mb-30 text-center">
                                 <div>
-                                    <img src="conocenos-enero21.jpg" alt="Author">
+                                    <%# <img src="conocenos-enero21.jpg" alt="Author"> %>
+                                    <%= image_tag("conocenos-enero21.jpg", alt: "image") %>
                                 </div>
                                 <div class="testimonial-content">
                                     <p class="text">KUNDALI YOGA | BANOS SONOROS | MEDITACION PRENATAL | HOMEOFFICE YOGA</p>
@@ -625,7 +639,8 @@
                         <div class="col-lg-4">
                             <div class="single-testimonial mt-30 mb-30 text-center">
                                 <div>
-                                    <img src="conocenos-conexion21.jpg" alt="Author">
+                                    <%# <img src="conocenos-conexion21.jpg" alt="Author"> %>
+                                    <%= image_tag("conocenos-conexion21.jpg", alt: "image") %>
                                 </div>
                                 <div class="testimonial-content">
                                     <p class="text">CONCIERTO | RITUAL  | BANO DEPURACION</p>
@@ -657,7 +672,8 @@
             <div class="col-lg-4 col-md-7 col-sm-8">
                 <div class="single-contact-box mt-50 text-center wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
                     <div class="box-icon">
-                        <a href="mailto:giantarabani@gmail.comtarget" target="_blank"><i class="fa fa-envelope" id="contact-icons"></i></a> 
+                        <%# <a href="mailto:giantarabani@gmail.comtarget" target="_blank"><i class="fa fa-envelope" id="contact-icons"></i></a> %>
+                        <%= mail_to "info@giantarabani.life", content_tag(:i, "", :class => "fa fa-envelope", :id => "contact-icons" )%>
                     </div>
                     <div class="box-content">
                         <h4 class="box-title">Correo Electronico</h4>
@@ -668,7 +684,8 @@
             <div class="col-lg-4 col-md-7 col-sm-8">
                 <div class="single-contact-box mt-50 text-center wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
                     <div class="box-icon">
-                      <a href="https://wa.me/525621736071?text=Hola,%20me%20gustaria%20saber%20mas%20acerca%20de%20yoga%20y%20meditacion" target="_blank"><i class="fa fa-whatsapp"  id="contact-icons"></i></a> 
+                      <%# <a href="https://wa.me/525621736071?text=Hola,%20me%20gustaria%20saber%20mas%20acerca%20de%20yoga%20y%20meditacion" target="_blank"><i class="fa fa-whatsapp"  id="contact-icons"></i></a>  %>
+                      <%= link_to content_tag(:i, "", :class => "fa fa-whatsapp", :id => "contact-icons" ), "https://wa.me/525621736071?text=Hola,%20me%20gustaria%20saber%20mas%20acerca%20de%20yoga%20y%20meditacion"%>
                     </div>
                     <div class="box-content">
                         <h4 class="box-title">Whatsapp</h4>
@@ -679,7 +696,8 @@
             <div class="col-lg-4 col-md-7 col-sm-8">
                 <div class="single-contact-box mt-50 text-center wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.8s">
                     <div class="box-icon">
-                        <a href="https://www.google.com.mx/maps/place/Avenida+Jes%C3%BAs+del+Monte+44,+Hacienda+de+las+Palmas,+52764+Naucalpan+de+Ju%C3%A1rez,+M%C3%A9x./@19.3949819,-99.2919033,17z/data=!3m1!4b1!4m5!3m4!1s0x85d206c5f7d46d65:0x3ab5bb20c2f312cb!8m2!3d19.3949819!4d-99.2897146?hl=en&authuser=0" target="_blank"><i class="fa fa-map-marker"  id="contact-icons"></i></a>
+                        <%# <a href="https://www.google.com.mx/maps/place/Avenida+Jes%C3%BAs+del+Monte+44,+Hacienda+de+las+Palmas,+52764+Naucalpan+de+Ju%C3%A1rez,+M%C3%A9x./@19.3949819,-99.2919033,17z/data=!3m1!4b1!4m5!3m4!1s0x85d206c5f7d46d65:0x3ab5bb20c2f312cb!8m2!3d19.3949819!4d-99.2897146?hl=en&authuser=0" target="_blank"><i class="fa fa-map-marker"  id="contact-icons"></i></a> %>
+                        <%= link_to content_tag(:i, "", :class => "fa fa-map-marker", :id => "contact-icons" ), "https://www.google.com.mx/maps/place/Avenida+Jes%C3%BAs+del+Monte+44,+Hacienda+de+las+Palmas,+52764+Naucalpan+de+Ju%C3%A1rez,+M%C3%A9x./@19.3949819,-99.2919033,17z/data=!3m1!4b1!4m5!3m4!1s0x85d206c5f7d46d65:0x3ab5bb20c2f312cb!8m2!3d19.3949819!4d-99.2897146?hl=en&authuser=0", :target => "_blank" %>
                     </div>
                     <div class="box-content">
                         <h4 class="box-title">Direccion</h4>
@@ -695,7 +713,8 @@
                 <%#= render 'form'%>   <%#= link_to "Message", new_contact_path %>
                    <div class="single-contact-box mt-50 text-center wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
                       <div class="box-icon">
-                        <a href="https://www.giantarabani.life/contacts/new"><i class= "fa fa-comment" id="contact-icons"></i></a>
+                        <%# <a href="https://www.giantarabani.life/contacts/new"><i class= "fa fa-comment" id="contact-icons"></i></a> %>
+                        <%= link_to content_tag(:i, "", :class => "fa fa-comment", :id => "contact-icons" ),  controller: 'contacts', action: 'new' %>
                       </div>
                       <div class="box-content">
                         <h4 class="box-title">Mensaje Directo</h4>
@@ -726,9 +745,30 @@
                     <div class="footer-link">
                         <h6 class="footer-title">Redes Sociales</h6>
                         <ul class="social">
-                            <li><a href="https://www.facebook.com/GIANTARABANI" target="_blank"><span style="font-size: 1.5em;"><i class="fa fa-facebook-square"></span></i> &nbsp Facebook</a></li>
-                            <li><a href="https://www.instagram.com/giantarabani/" target="_blank"><span style="font-size: 1.5em;"><i class="fa fa-instagram"></span></i> &nbsp Instagram</a></li>
-                            <li><a href="https://www.picuki.com/profile/giantarabani" target="_blank"><span style="font-size: 1.5em;"><i class="fa fa-camera"></span></i> &nbsp Picuki</a></li>
+                        <!--  INDIVIDUAL LINKS BETWEEN ICON AND TEXT  
+                              <li><%= link_to content_tag(:href, "", :class => "fa fa-map-marker", :id => "contact-icons", :style => "font-size: 1.5em;" ), "https://www.google.com", :target => 
+                              "_blank" %>&nbsp &nbsp<%= link_to content_tag(:href, "HELLO", :class => "social"), "https://www.google.com", :target => "_blank" %></li> %> -->
+                            <%# <li><a href="https://www.facebook.com/GIANTARABANI" target="_blank"><span style="font-size: 1.5em;"><i class="fa fa-facebook-square"></span></i> &nbsp Facebook</a></li> %>
+                            <li>
+                              <%= link_to "https://www.facebook.com/GIANTARABANI", :target => "_blank" do %>
+                                <%= content_tag(:href, "", :class => "fa fa-facebook-square", :id => "contact-icons", :style => "font-size: 1.5em;" ) %>
+                                <span>&nbsp Facebook</span>
+                             <% end %>  
+                            </li>
+                            <%# <li><a href="https://www.instagram.com/giantarabani/" target="_blank"><span style="font-size: 1.5em;"><i class="fa fa-instagram"></span></i> &nbsp Instagram</a></li> %>
+                            <li>
+                              <%= link_to "https://www.instagram.com/giantarabani", :target => "_blank" do %>
+                                <%= content_tag(:href, "", :class => "fa fa-instagram", :id => "contact-icons", :style => "font-size: 1.5em;" ) %>
+                                <span>&nbsp Instagram</span>
+                             <% end %>  
+                            </li>
+                            <%# <li><a href="https://www.picuki.com/profile/giantarabani" target="_blank"><span style="font-size: 1.5em;"><i class="fa fa-camera"></span></i> &nbsp Picuki</a></li> %>
+                            <li>
+                              <%= link_to "https://www.picuki.com/profile/giantarabani", :target => "_blank" do %>
+                                <%= content_tag(:href, "", :class => "fa fa-camera", :id => "contact-icons", :style => "font-size: 1.5em;" ) %>
+                                <span>&nbsp Picuki</span>
+                             <% end %>  
+                            </li>
                         </ul>
                     </div> <!-- footer link -->
                 </div>
@@ -736,9 +776,9 @@
                     <div class="footer-link">
                         <h6 class="footer-title">Preguntas & Dudas</h6>
                         <ul>
-                            <li><a href="https://www.facebook.com/GIANTARABANI" target="_blank">Informacion</a></li>
-                            <li><a href="https://www.facebook.com/GIANTARABANI" target="_blank">Staff</a></li>
-                            <li><a href="https://www.facebook.com/GIANTARABANI" target="_blank">Terminos & Condiciones</a></li>
+                            <li><%= link_to "Informacion", "https://www.facebook.com/GIANTARABANI", :target => "_blank" %></li>
+                            <li><%= link_to "Staff", "https://www.facebook.com/GIANTARABANI", :target => "_blank" %></li>
+                            <li><%= link_to "Terminos & Condiciones", "https://www.facebook.com/GIANTARABANI", :target => "_blank" %></li>
                         </ul>
                     </div> <!-- footer link -->
                 </div>
@@ -755,7 +795,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="footer-link">
                         <ul>
-                          <li><img src="Gian_Tara_Bani_logo_navbar.png" height="150" width="150" alt="Logo"></li>
+                          <li><%= image_tag("Gian_Tara_Bani_logo_navbar.png", alt: "image", style: 'width: 150px; height: 150px') %></li>
                         </ul>
                     </div> <!-- footer link -->
                 </div>
@@ -777,9 +817,10 @@
   </footer>
 <!--====== FOOTER FOUR PART ENDS ======-->
 
-<!--====== BACK TOP TOP PART START ======-->
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-<!--====== BACK TOP TOP PART ENDS ======-->  
+<!--====== BACK TOP TOP ICON PART START ======-->
+  <%# <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> %>
+  <%= content_tag(:a, content_tag(:i, "", :class => "fa fa-chevron-up"), :class => 'back-to-top') %>
+<!--====== BACK TOP TOP ICON PART ENDS ======-->  
 
 <!--====== jquery js ======-->
 <script src="modernizr-3.6.0.min.js"></script>
