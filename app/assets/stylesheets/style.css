@@ -694,6 +694,17 @@ p {
     -webkit-transform: translateY(-100%); }
   51% {
     opacity: 1; } }
+/*===== ADDITIONAL NAVBAR STARTS=====*/
+    .added-navbar {
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-color: blueviolet;
+    }
+/*===== ADDITIONAL NAVBAR ENDS=====*/        
 /*===========================
        3.HEADER css 
 ===========================*/
