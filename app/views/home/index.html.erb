@@ -581,9 +581,9 @@
     </div> <!-- container -->
   </section>
 <!--====== SERVICIOS/portfolio PART ENDS ======-->
-       
+      
 <!--====== CONOCENOS/tesminotial THREE PART START ======-->
-    <section id="conocenos" class="testimonial-area testimonial-2">
+   <section id="conocenos" class="testimonial-area testimonial-2">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
@@ -654,9 +654,30 @@
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
-    </section>
+    </section>  
 <!--====== CONOCENOS/testimonial THREE PART ENDS ======-->
-    
+
+<!--====== INSTAFEED test START ======-->
+   <section id="conocenos" class="testimonial-area testimonial-2">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-center pb-20">
+                        <h3 class="title">IG Feed</h3>
+                        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptates fugiat consequuntur cum odit suscipit nihil laudantium aliquid, at autem.</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            
+            <div class="pics-container">
+              <div class="pics">
+                <div class="gallery-2" id="instafeed"></div>
+              </div> <!-- ig-container -->
+            </div>
+        </div> <!-- container -->
+    </section>  
+<!--====== INSTAFEED test ENDS ======-->
+
 <!--====== CONTACTANOS/contact START ======-->
   <section id="contact" class="contact-area">
     <div class="container">
@@ -707,20 +728,19 @@
                 </div> <!-- single contact box -->
             </div>            
         </div> <!-- row -->
-        <div class="pt-50"> <!-- DELETED CLASS CONTACT-FORM-->
+        <div class="pt-50 gtb-contact-form"> <!-- DELETED CLASS CONTACT-FORM-->
             <div class="row">
                 <div class="col-lg-6">
-                <%#= render 'form'%>   <%#= link_to "Message", new_contact_path %>
-                   <div class="single-contact-box mt-50 text-center wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                <%= render 'form'%>   <%#= link_to "Message", new_contact_path %>
+    <!--               <div class="single-contact-box mt-50 text-center wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
                       <div class="box-icon">
-                        <%# <a href="https://www.giantarabani.life/contacts/new"><i class= "fa fa-comment" id="contact-icons"></i></a> %>
                         <%= link_to content_tag(:i, "", :class => "fa fa-comment", :id => "contact-icons" ),  controller: 'contacts', action: 'new' %>
                       </div>
                       <div class="box-content">
                         <h4 class="box-title">Mensaje Directo</h4>
                         <p class="text">Informes</p>                        
                       </div>
-                   </div> <!-- single contact box -->
+                   </div>  single contact box -->
                 </div>
                 <div class="col-lg-6">
                     <div class="contact-map mt-50 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
@@ -843,3 +863,5 @@
 <script src="wow.min.js"></script>
 <!--====== Main js ======-->
 <script src="main.js"></script>
+<!--=====Instafeed.js=====-->
+<script asset_path(instafeed.js, skip_pipeline: true)></script>

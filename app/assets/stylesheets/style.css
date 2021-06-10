@@ -2138,6 +2138,36 @@ p {
     .testimonial-active-4 .slick-dots li.slick-active button {
       background-color: #38f9d7; }
 
+/*=========================
+     INSTAGRAM FEED
+==========================*/
+
+/* .pics-container {
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: #67a5ad;
+  display: flex;
+  flex-direction: row;
+} */
+
+.gallery-2 {
+  display: grid; 
+  grid-gap: 0.5em;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 5fr));
+  padding: 0.5em;
+  height: auto;
+}
+
+.pics img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover;
+  text-align: center;
+  border-radius: 3%;
+}
+
 /*===========================
        25.CLIENT css 
 ===========================*/

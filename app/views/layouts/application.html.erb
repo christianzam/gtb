@@ -20,7 +20,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/ico">
     <%= favicon_link_tag %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%# <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>  
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>   
   </head>
   <body>
     <% if flash[:notice] %>
