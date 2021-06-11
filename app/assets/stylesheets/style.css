@@ -728,53 +728,18 @@ p {
     }
 
     @media (max-width:768px) {
-      .added-icons {
-        width: 50%;
-        position: absolute;
-        display: flex;
-        flex-direction: row;
-        padding-top: 1%;
-        justify-content: space-around;
-        column-gap: 10px;
-        
+      #added-icons {
+        margin: 0.5em;
+        font-size: 1.35em; 
       } 
     }
 
     @media (max-width:480px) {
-      .added-icons {
-        width: auto;
-        position: absolute;
-        display: flex;
-        flex-direction: row;
-        padding-top: 1%;
-        justify-content: center;
-        column-gap: 10px;
+      #added-icons {
+        visibility: hidden;
       } 
     }
  
-    @media (max-width:320px) {
-      .added-icons {
-        width: auto;
-        position: absolute;
-        display: flex;
-        flex-direction: row;
-        padding-top: 1%;
-        justify-content: center;
-        column-gap: 7px;
-      } 
-    }
-
-    @media (max-width:200px) {
-      .added-icons {
-        width: auto;
-        position: absolute;
-        display: flex;
-        flex-direction: row;
-        padding-top: 1%;
-        justify-content: center;
-        column-gap: 5px;
-      } 
-    }
 /*===== ADDITIONAL NAVBAR ENDS=====*/        
 /*===========================
        3.HEADER css 
@@ -2327,7 +2292,7 @@ p {
   color: #fc3832; }
 
 #contact-icons:hover {
-  color: #38f9d7;
+  color: #38f9d7 !important;
   transition-duration: 0.2s;
   transform: scale(1.3);
 }
@@ -2527,5 +2492,14 @@ p {
   .back-to-top:hover {
     color: #121212;
     background-color: #38f9d7; }
+
+/*=========FOOTER==========*/
+
+.container-footer-icons {
+  display: flex;
+  justify-content: center;
+  column-gap: 5%;
+  margin-top: 1%;
+}
 
 /*# sourceMappingURL=style.css.map */
