@@ -2502,4 +2502,14 @@ p {
   margin-top: 1%;
 }
 
+@media screen and (max-width: 425px) {
+  .footer-title {
+    display: none;
+  }
+  .container-footer-icons {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
